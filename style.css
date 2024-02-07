@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(255, 226, 59);
+}
+
+h1{
+    text-align: center;
+}
+
+#container_main{
+    background-color: rgba(255, 17, 0, 0.7);
+}
+
+hr{
+    color: aqua;
+    
+}
+
+#button_header{
+    align-self: center;
+    text-align: center;
+}
