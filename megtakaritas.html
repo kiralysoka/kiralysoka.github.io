@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Megtakarítás kalkalkulátor</title>
+    <script src="js.js"></script>
+</head>
+<body>
+    <fieldset>
+        <h2>Megtakarítás - Kalkulátor</h2>
+        <form>
+            <label for="megtakaritas">Heti megtakarításod (Ft):</label><br>
+            <input type="number" name="megtakaritas" id="megtakaritas" placeholder="pld. 3000 "><br><br>
+            <label for="ido">Mennyi ideig spórolsz?</label><br>
+            <select name="ido" id="ido" value="Kérem válasszon!" >
+                <option disabled selected value> Kérem válasszon! </option>
+                <option value="0.5">Fél év</option>
+                <option value="1">Egy év</option>
+                <option value="3">Három év</option>
+                <option value="5">Öt év</option>
+            </select><br><br>
+            <input type="radio" value="kerekpar" name="vasarlas" id="kerekpar" checked>
+            <label for="kerekpar">Kerékpár - 100.000 Ft</label><br>
+            <input type="radio" value="telefon" name="vasarlas" id="telefon" >
+            <label for="telefon">Telefon - 80.000 Ft</label><br>
+            <input type="radio" value="jatekkonzol" name="vasarlas" id="jatekkonzol">
+            <label for="jatekkonzol">Játékkonzol - 150.000 Ft</label><br><br>
+            <br><br>
+            <input type="button" id="kuld" value="SZÁMOL" onclick="szamol()"><br><br>
+        </form>
+        <p id="eredmeny"></p>
+    </fieldset>
+</body>
+</html>
