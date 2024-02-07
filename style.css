@@ -1,21 +1,48 @@
 body{
-    background-color: rgb(255, 226, 59);
+    background-color: rgb(33, 28, 106);
 }
 
 h1{
     text-align: center;
+    color: rgb(91, 225, 230);
 }
 
 #container_main{
-    background-color: rgba(255, 17, 0, 0.7);
+    background-color: rgb(16, 88, 255);
+    margin: 10px, 10px, 10px, 10px;
+    padding: 20px;
+    border: 1px solid rgb(0, 255, 255);
 }
 
-hr{
-    color: aqua;
+#vonal{
+    color: rgb(91, 225, 230);
     
 }
 
 #button_header{
     align-self: center;
     text-align: center;
+}
+
+p{
+    color: rgb(91, 225, 230);
+}
+
+.nav_item{
+    text-align: center;
+    background-position: center;
+}
+
+#navbar_01{
+    border: 1px solid rgb(8, 247, 255);
+    padding: 10px;
+    background-color: rgb(146, 239, 255);
+}
+
+#nav_font{
+    color: rgb(0, 96, 185);
+}
+
+#nav_gomb{
+    border: 1px solid black;
 }
