@@ -1,21 +1,68 @@
 body{
-    background-color: rgb(33, 28, 106);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s background ease;
 }
+
+.dark-mode{
+    background-color: rgb(95, 95, 95);
+    color: rgb(218, 218, 218);
+}
+
+.navbar-expand-md{
+    background-color: rgb(219, 219, 219);
+}
+
+.dark-mode-nav{
+    background-color: rgb(204, 204, 204);
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
+.dark-nav-link{
+    color: white;
+}
+
+.btn-light{
+    border: 1px solid black;
+    margin: 2px;
+}
+
+.nav-link{
+    color: rgb(255, 255, 255);
+}
+
+#dark_mode_button{
+    background-color: red;
+    border-color: rgb(238, 255, 0);
+}
+
 
 h1{
     text-align: center;
-    color: rgb(91, 225, 230);
+    
 }
 
-#container_main{
-    background-color: rgb(16, 88, 255);
+.container-md{
+    background-color: rgb(156, 156, 156);
     margin: 10px, 10px, 10px, 10px;
     padding: 20px;
-    border: 1px solid rgb(0, 255, 255);
+    border: 1px solid;
+    transition: 0.5s background ease;
+}
+    
+
+.dark-mode-container-md {
+    background-color: black;
 }
 
 #vonal{
-    color: rgb(91, 225, 230);
+    
+    width: 70%; 
+    margin: auto;
+    border: 1.5px solid ;
     
 }
 
@@ -24,25 +71,119 @@ h1{
     text-align: center;
 }
 
-p{
-    color: rgb(91, 225, 230);
-}
-
-.nav_item{
-    text-align: center;
-    background-position: center;
-}
-
 #navbar_01{
-    border: 1px solid rgb(8, 247, 255);
+    border: 1px solid;
     padding: 10px;
-    background-color: rgb(146, 239, 255);
+
 }
 
 #nav_font{
-    color: rgb(0, 96, 185);
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    background-color: #000000;
 }
 
+.navbar-brand{
+    color: black;
+    margin-right: 22px;
+    margin-left: 5px;
+}
+.navbarSupportedContent{
+    color: rgb(255, 0, 0);
+}
+
+
+
 #nav_gomb{
-    border: 1px solid black;
+    border: 1px solid;
+}
+
+
+#dark_mode{
+    text-align: right;
+}
+
+  p{
+    transition: 0.5s background ease;
+  }
+
+#dark_label{
+    width:100px;
+    height:40px;
+    position: relative;
+    background: #ebebeb;
+    border: 1px solid rgb(86, 109, 185);
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+    cursor: pointer;
+}
+
+
+
+#dark_label:after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top:0px;
+    left:0px;
+    background: linear-gradient(180deg,#ffcc89,#d8860b);
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 300px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+  input{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+input:checked + #dark_label {
+    background: #242424;
+  }
+  input:checked + #dark_label:after {
+    left:100px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg,#777,#3a3a3a);
+    border: 1px solid rgb(255, 255, 255);
+  }
+  #dark_label, #dark_label:after {
+    transition: 0.3s
+  }
+
+#dark_label:active:after{ 
+    width: 60px; 
+}
+
+input:checked + #dark_label + #container_main {
+    background:#242424;
+  }
+
+  #dark_label svg {
+    position: absolute;
+    width: 30px;
+    top:30px;
+    z-index: 100;
+  }
+  #dark_label svg.sun {
+    left:5px;
+    top: 5px;
+    fill:#0a0000;
+    transition: 0.3s;
+  }
+  #dark_label svg.moon {
+    left:65px;
+    top: 5px;
+    fill:#000000;
+    transition: 0.3s;
+  }
+  input:checked + #dark_label svg.sun {
+    fill:#ffffff;
+  }
+  input:checked + #dark_label svg.moon {
+    fill:#fff;
+  }
+
+.dark_theme_label{
+    border: 1px solid rgb(255, 255, 255);
 }
