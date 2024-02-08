@@ -3,12 +3,19 @@ body{
     color: rgb(0, 0, 0);
     justify-content: center;
     align-items: center;
+    background-image: url('/images/sunrise.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     transition: 0.5s background ease;
 }
 
 .dark-mode{
     background: #252525;
     color: rgb(218, 218, 218);
+    background-image: url('/images/night.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s background ease;
 }
 
 .navbar-expand-md{
@@ -44,7 +51,7 @@ h1{
 }
 
 .container-md{
-    background-color: rgb(148, 117, 117);
+    background-color: rgb(148, 117, 117, 0.7);
     margin: 10px, 10px, 10px, 10px;
     padding: 20px;
     border: 1px solid;
@@ -52,13 +59,13 @@ h1{
 }
     
 .dark-mode-container-md {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.7)
 }
 
 #vonal{
     width: 70%; 
     margin: auto;
-    border: 1.5px solid ;
+    border: 1.5px solid;
 }
 
 .btn-light{
