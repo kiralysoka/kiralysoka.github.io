@@ -61,7 +61,7 @@ body{
 .img-thumbnail-about{
     display: block;
     width: 345px;
-    margin: 20px;
+    margin-bottom: 20px;
     margin-right: 0px;
     margin-top: 10px;
     border: 2px solid rgb(0, 0, 0);
@@ -69,7 +69,7 @@ body{
 .img-thumbnail-about-dark{
     display: block;
     width: 345px;
-    margin: 20px;
+    margin-bottom: 20px;
     margin-right: 0px;
     margin-top: 10px;
     border: 2px solid rgb(255, 255, 255);
