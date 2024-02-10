@@ -60,17 +60,18 @@ body{
 
 .img-thumbnail-about{
     display: block;
-    width: 345px;
+    width: 300px;
     margin-bottom: 20px;
-    margin-right: 0px;
+    margin-right: 25px;
+    margin-left: 10px;
     margin-top: 10px;
     border: 2px solid rgb(0, 0, 0);
 }
 .img-thumbnail-about-dark{
     display: block;
-    width: 345px;
-    margin-bottom: 20px;
-    margin-right: 0px;
+    width: 300px;
+    margin-right: 25px;
+    margin-left: 10px;
     margin-top: 10px;
     border: 2px solid rgb(255, 255, 255);
 }
