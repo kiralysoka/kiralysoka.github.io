@@ -1,3 +1,15 @@
+function time(){
+  var date = new Date();    
+  var time = date.toLocaleTimeString();
+  var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  var day = date.toLocaleDateString('hu',options);
+  document.getElementById('time').innerHTML = time;
+  document.getElementById('day').innerHTML = day;
+}
+setInterval(function(){
+  time();
+},1000);
+
 function DarkMode() {
   
   var theme;
@@ -8,6 +20,9 @@ function DarkMode() {
   var theme_button_present;
   var theme_button_secondary;
   var theme_button_third;
+  var theme_table_about;
+  var theme_images;
+ 
 
   var dark_theme_body = document.body;
   dark_theme_body.classList.toggle("dark-mode");
@@ -105,6 +120,29 @@ function DarkMode() {
   }
 
 
+  var dark_theme_table = document.getElementById("tablazat_about");
+  dark_theme_table.classList.toggle("tablazat-about-dark");
+
+  if(dark_theme_table.classList.contains("tablazat-about-dark")){
+    console.log("Dark mode");
+    theme_table_about = "DARK9";
+  }else{
+    console.log("Light mode");
+    theme_table_about = "LIGHT9";
+  }
+
+
+  var dark_theme_images = document.getElementById("images_id");
+  dark_theme_images.classList.toggle("img-thumbnail-about-dark");
+
+  if(dark_theme_images.classList.contains("img-thumbnail-about-dark")){
+    console.log("Dark mode");
+    theme_images = "DARK10";
+  }else{
+    console.log("Light mode");
+    theme_images = "LIGHT10";
+  }
+
 
   //save to localstorage
   localStorage.setItem("PageTheme", JSON.stringify(theme));
@@ -115,6 +153,8 @@ function DarkMode() {
   localStorage.setItem("PageThemeButtonPresent", JSON.stringify(theme_button_present));
   localStorage.setItem("PageThemeButtonSecondary", JSON.stringify(theme_button_secondary));
   localStorage.setItem("PageThemeButtonThird", JSON.stringify(theme_button_third));
+  localStorage.setItem("PageThemeTableAbout", JSON.stringify(theme_table_about));
+  localStorage.setItem("PageThemeImages", JSON.stringify(theme_images));
 
 }
 
@@ -198,11 +238,22 @@ setInterval(() => {
   }
 }, 5);
 
+setInterval(() => {
+  let GetThemeTableAbout = JSON.parse(localStorage.getItem("PageThemeTableAbout"));
+  console.log(GetThemeTableAbout);
+  if(GetThemeTableAbout === "DARK9"){
+    document.getElementById("tablazat_about").classList = "tablazat-about container-sm tablazat-about-dark";
+  }else{
+    document.getElementById("tablazat_about").classList = "tablazat-about container-sm";
+  }
+}, 5);
 
-
-
-
-
-
-
-
+setInterval(() => {
+  let GetThemeImages = JSON.parse(localStorage.getItem("PageThemeImages"));
+  console.log(GetThemeImages);
+  if(GetThemeImages === "DARK10"){
+    document.getElementById("images_id").classList = "img-thumbnail-about img-thumbnail-about-dark";
+  }else{
+    document.getElementById("images_id").classList = "img-thumbnail-about";
+  }
+}, 5);
