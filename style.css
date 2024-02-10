@@ -62,18 +62,19 @@ body{
 }
 
 .img-thumbnail-about{
-    display: block;
-    width: 300px;
-    margin: 25px;
+    display: inline-block;
+    width: 250px;
+    margin-left: 30px;
+    margin-bottom: 20px;
     border: 2px solid rgb(0, 0, 0);
 }
 .img-thumbnail-about-dark{
-    display: block;
-    width: 300px;
-    margin: 25px;
+    display: inline-block;
+    width: 250px;
+    margin-left: 30px;
+    margin-bottom: 20px;
     border: 2px solid rgb(255, 255, 255);
 }
-
 .dark-nav-link{
     color: white;
 }
