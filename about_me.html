@@ -10,7 +10,7 @@
 </head>
 <body>
   <br>
-    <div class="container-md col-lg-9 col-md-10 col-sm-9 col-xs-12" id="container_main">
+    <div class="container-md col-lg-9 col-md-10 col-sm-10 col-xs-12" id="container_main">
       <nav class="navbar navbar-expand-md navbar-light" id="navbar_01">
         <a class="navbar-brand navi-bar-title" id="navbar_brand_title">KiralysokA</a>
         <button id="nav_toggler" class="navbar-toggler navi-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,11 +28,14 @@
               <a class="btn btn-light button-present" id="nav_button_present">Rólam<span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
-              <a href="exp.html" class="btn btn-light button-secondary" id="nav_button_third">Tapasztalataim, tanulmányaim<span class="sr-only"></span></a>
+              <a href="exp.html" class="btn btn-light button-secondary" id="nav_button_third">Tanulmányaim<span class="sr-only"></span></a>
             </li>
           </ul>
         </div>
       </nav>
+      <div align="right">
+        <span id="time" onload="time()"></span>
+      </div>
       <br>
       <div id="dark_mode">
         <input type="checkbox" onclick="DarkMode()" class="container_color" id="darkmode-toggle"/>
@@ -67,18 +70,44 @@
       </div>
       <div>
         <h1>Rólam</h1>
-        <hr id="vonal">
+        <hr id="vonal" class="vonal">
         <br>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod, lorem eget porta porttitor, lorem quam condimentum enim, in luctus libero tortor in ipsum. Donec egestas hendrerit nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus ut blandit sapien, eget hendrerit sapien. Curabitur sed luctus dui. Vivamus quis eros nibh. Curabitur vitae leo sed leo viverra semper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Phasellus tempus dictum urna, pharetra imperdiet risus scelerisque nec. Aliquam accumsan accumsan leo, a placerat eros commodo vel. Curabitur ante tortor, mattis at quam a, rhoncus aliquam velit. Suspendisse potenti. </p>
-          <p>Fusce mattis sollicitudin urna nec dapibus. Nullam sodales, nisi ut tempus sagittis, ante ex semper orci, sit amet venenatis elit nunc sed orci. Aliquam et vehicula lorem. Nam dapibus id ligula a interdum. Sed molestie ac mi vel ornare. Aenean nec posuere erat. Proin et tincidunt nisl. Ut elementum diam vel lorem sollicitudin, sed rhoncus tortor sodales. Nulla vitae mi euismod, dignissim eros vel, elementum sem. Nam in euismod ex. Quisque varius iaculis consequat. Cras sed nisi cursus, condimentum elit at, sodales justo. Donec ut porttitor lorem. Praesent sed eros non mauris commodo malesuada. In lobortis lorem massa, et lacinia dui lacinia eu. Nunc lacinia congue arcu vel ultrices. </p>
-          <p>In luctus leo nec eros condimentum, lobortis fermentum felis sagittis. Nam ut quam et odio sollicitudin malesuada. Nam sed faucibus justo, fermentum vulputate ex. Phasellus vehicula orci vel feugiat hendrerit. Nulla tempus vel est nec ornare. Aliquam tristique tristique facilisis. Nulla quis risus ipsum. Fusce sed est sed ligula vestibulum congue. Nulla pretium a lacus at dictum. Curabitur vestibulum, justo quis volutpat suscipit, arcu nisi finibus dui, at mattis lectus tellus non diam. Vivamus neque arcu, ullamcorper id maximus vitae, convallis et mauris. Vivamus eros diam, molestie non odio vitae, tristique laoreet neque. Phasellus pretium sodales eros. </p>
-          <p>Aenean gravida feugiat eros, vel tincidunt arcu porta in. Nunc tempor, est ut pellentesque pretium, dolor velit maximus tellus, nec vehicula nibh ex at orci. Sed nec efficitur dui, a cursus sapien. Duis accumsan dapibus quam, et elementum arcu accumsan vitae. Nulla condimentum lacus sit amet sodales vestibulum. Nulla in massa porta, imperdiet enim a, dignissim nunc. Praesent orci quam, laoreet in ante sed, hendrerit faucibus massa. Nam eget interdum ex, eu scelerisque nulla. Aenean vel interdum massa. Aenean rhoncus mi tortor, sed tincidunt leo ornare vitae. Nulla facilisi. Integer suscipit posuere sapien eget vulputate. Nunc pharetra commodo ante vitae congue. Pellentesque pharetra sagittis ex et eleifend. Vestibulum venenatis tortor dolor, ac eleifend lectus pulvinar id. Vestibulum dolor nulla, sodales ac auctor nec, imperdiet molestie justo. </p>
-          <p>Donec tristique fringilla pellentesque. Donec consequat fringilla libero, nec vulputate tellus porta sit amet. In non augue pellentesque, viverra erat non, consectetur leo. Integer scelerisque magna ac libero euismod, eu cursus tortor feugiat. Nulla ut cursus neque, non feugiat ipsum. Donec a eros luctus, feugiat eros sit amet, imperdiet dui. Maecenas ac sem eget leo consequat tincidunt et ut nisi. Morbi ornare iaculis ex nec iaculis. </p>
+        <div class="tablazat-about container-sm" id="tablazat_about">
+          
+                      <p>
+                        Király Ákos vagyok.
+                        <br>
+                        Pályakezdő rendszer- és alkalmazás-üzemeltető technikus.
+                      </p>
+                      <p>
+                        <div col-lg-9 col-md-10 col-sm-9 col-xs-12>
+                        <img src="/images/profile.jpg" class="img-thumbnail-about" id="images_id" align="right">
+                      </div>
+                      </p>
+                      <p>Vivamus euismod, lorem eget porta porttitor, lorem quam condimentum enim, in luctus libero tortor in ipsum.
+                         Donec egestas hendrerit nunc. 
+                         Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod, lorem eget porta porttitor, lorem quam condimentum enim, in luctus libero tortor in ipsum. Donec egestas hendrerit nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus ut blandit sapien, eget hendrerit sapien. Curabitur sed luctus dui. Vivamus quis eros nibh. Curabitur vitae leo sed leo viverra semper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Phasellus tempus dictum urna, pharetra imperdiet risus scelerisque nec.
+                      </p>
+                      <br>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod, lorem eget porta porttitor, lorem quam condimentum enim, in luctus libero tortor in ipsum. Donec egestas hendrerit nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus ut blandit sapien, eget hendrerit sapien. Curabitur sed luctus dui. Vivamus quis eros nibh. Curabitur vitae leo sed leo viverra semper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Phasellus tempus dictum urna, pharetra imperdiet risus scelerisque nec. Aliquam accumsan accumsan leo, a placerat eros commodo vel. Curabitur ante tortor, mattis at quam a, rhoncus aliquam velit. Suspendisse potenti.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod, lorem eget porta porttitor, lorem quam condimentum enim, in luctus libero tortor in ipsum. Donec egestas hendrerit nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus ut blandit sapien, eget hendrerit sapien. Curabitur sed luctus dui. Vivamus quis eros nibh. Curabitur vitae leo sed leo viverra semper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Phasellus tempus dictum urna, pharetra imperdiet risus scelerisque nec. Aliquam accumsan accumsan leo, a placerat eros commodo vel. Curabitur ante tortor, mattis at quam a, rhoncus aliquam velit. Suspendisse potenti.
+                      </p>
+                      
+        </div>
       </div>
     </div>
-
+    <script>
+    
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
+  <footer>
+      <br>
+  </footer>
 </html>
