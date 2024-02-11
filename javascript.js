@@ -4,7 +4,6 @@ function time(){
   var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
   var day = date.toLocaleDateString('hu',options);
   document.getElementById('time').innerHTML = time;
-  document.getElementById('day').innerHTML = day;
 }
 setInterval(function(){
   time();
