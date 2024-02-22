@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 body{
-    color: rgb(0, 0, 0);
     background-color: #000000;
+    /*
     justify-content: center;
     align-items: center;
+    */
     background-image: url('/images/afternoon_02.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,10 +13,14 @@ body{
     font-size: large;
     transition: 1s background ease;
     
+    
 }
 .dark-mode{
     color: rgb(255, 255, 255);
     background-image: url('/images/night.jpg');
+    background-color: #000000;
+    justify-content: center;
+    align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Poppins";
@@ -25,20 +30,20 @@ body{
 
 
 .navbar-expand-md{
-    background-color: rgb(255, 255, 255);
-    border: 2px solid black;
+    background-color: rgba(255, 86, 56, 0.6);
+    border: 3px solid rgb(128, 41, 7);
     padding: 10px;
 }
 .dark-mode-nav{
-    background-color: #252525;
-    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(37, 37, 37, 0.6);
+    border: 3px solid rgb(255, 255, 255);
     color: rgb(255, 255, 255);;
 }
 
 
 .navi-toggler{
-    background-color: rgb(219, 219, 219);
-    border: 2px solid black;
+    background-color: rgb(253, 148, 115);
+    border: 2px solid rgb(177, 56, 8);
 }
 .navi-toggler-dark{
     background-color: rgb(0, 0, 0);
@@ -47,7 +52,7 @@ body{
 
 
 .navi-bar-title{
-    color:rgb(0, 0, 0);
+    color: rgb(80, 23, 0);
     pointer-events: none;
     font-size: x-large;
 }
@@ -66,21 +71,33 @@ body{
     width: 250px;
     margin-left: 30px;
     margin-bottom: 20px;
-    border: 2px solid rgb(0, 0, 0);
+    border: 4px solid;
 }
 .img-thumbnail-about-dark{
     display: inline-block;
     width: 250px;
     margin-left: 30px;
     margin-bottom: 20px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 4px solid rgb(255, 255, 255);
 }
+
+.img-exp{
+    margin: 10px, 10px, 10px, 10px;
+    padding: 10px;
+    border-radius: 25px;
+}
+.img-exp:hover{
+    box-shadow: 
+    inset 5px 5px 10px #dddddd, 
+    inset -5px -5px 10px #dddddd;
+    border-radius: 25px;
+}
+
 .dark-nav-link{
     color: white;
 }
 
 .btn-light{
-    border: 1px solid black;
     margin: 2px;
     transition: 0.5s background ease;
 }
@@ -100,21 +117,20 @@ h1{
 
 .container-md{
     background-color: rgba(255, 120, 120, 0.4);
-    color:black;
+    color:rgb(80, 23, 0);
     margin: 10px, 10px, 10px, 10px;
     padding: 20px;
-    border: 2px solid rgb(0, 0, 0);
+    border: 3px solid;
     transition: 0.5s background ease;
     margin: 0 auto;
     position: relative;
 }
-    
 .dark-mode-container-md{
     background-color: rgba(0, 0, 0, 0.4);
     color:white;
     margin: 10px, 10px, 10px, 10px;
     padding: 20px;
-    border: 2px solid;
+    border: 3px solid;
     transition: 0.5s background ease;
     margin: 0 auto;
     position: relative;
@@ -122,15 +138,15 @@ h1{
 }
 
 .tablazat-about{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 86, 56, 0.6);
     padding: 20px;
-    border: 2px solid rgb(0, 0, 0);
+    border: 3px solid;
     transition: 0.5s background ease;
 }
 .tablazat-about-dark{
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
     transition: 0.5s background ease;
 }
 
@@ -145,16 +161,15 @@ h1{
     opacity: 0.6;
 }
 
-.dark-btn-light{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    border: 2px solid rgb(255, 255, 255);
+.about_vonal{
+    margin: 10px;
 }
 
+
 .button-present{
-    background-color: rgb(0, 0, 0);
-    color: white;
-    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(177, 56, 8);
+    color: rgb(255, 253, 250);
+    border: 2px solid rgb(177, 56, 8);
     pointer-events: none;
 }
 .button-present-dark{
@@ -165,9 +180,9 @@ h1{
 }
 
 .button-secondary{
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(255, 150, 124);
+    color: rgb(80, 23, 0);
+    border: 2px solid rgb(177, 56, 8);
     margin: 2px;
 }
 .button-secondary-dark{
@@ -177,7 +192,16 @@ h1{
     margin: 2px;
 }
 
-
+.button-secondary:hover{
+    color:white;
+    background-color: rgb(141, 47, 9);
+    border: 2px solid rgb(141, 47, 9);
+}
+.button-secondary-dark:hover{
+    color:rgb(0, 0, 0);
+    background-color: rgb(216, 216, 216);
+    border: 2px solid rgb(216, 216, 216);
+}
 
 .navibar-title{
     color: black;
@@ -194,9 +218,15 @@ h1{
     text-align: right;
 }
 
-p{
+p, h4, h5{
+    margin: 10px;
     transition: 0.5s background ease;
 }
+
+h5, h4{
+    margin-bottom: 20px;
+}
+
 
 #dark_label{
     width: 102px;
@@ -284,3 +314,28 @@ input:checked + #dark_label svg.moon{
 .dark_theme_label{
     border: 1px solid rgb(255, 255, 255);
 }
+
+.parallax{
+    background: url("images/parallax.jpg") repeat fixed 100%;
+    height: 200px;
+    border: 4px solid;
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.parallax-inner{
+    font-size: 40px;
+    position: absolute;
+    margin-top: 60px;
+    right: 5px;
+    left: 1px;
+    width: 100%;
+    text-align: center;
+}
+
+#index_img_title{
+    /*color: rgb(0, 255, 242);*/
+      color: white;
+}
+
