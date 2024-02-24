@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-body{
-    background-color: #000000;
+
+body {
+    background: var(--background-default);
+}
+
+.default{
+    --background-default: #000000;
     /*
     justify-content: center;
     align-items: center;
@@ -12,10 +17,121 @@ body{
     font-family: "Poppins";
     font-size: large;
     transition: 1s background ease;
+
+/* Loading Page --------------------------------*/ 
+--loading-page-background-color: rgb(128, 41, 7);
+
+
+/* Navigation ----------------------------------*/
+    --navbar-background: rgba(255, 86, 56, 0.6);
+    --navbar-border: 3px solid rgb(128, 41, 7);
+    --navbar-padding: 10px;
+
+ /* Logó --------------------------------------*/   
+    --navi-bar-title-color: rgb(80, 23, 0);
+    --navi-bar-title-font-size: x-large;
+    --navi-bar-title-transition: 0.5s;
+    --navi-bar-title-hover: rgb(255, 255, 255);
+
+/* Navigation toggler --------------------------------------*/  
+    --navi-toggler-background: rgb(253, 148, 115);
+    --navi-toggler-border: 2px solid rgb(177, 56, 8);
+    --navi-toggler-color: rgb(177, 56, 8);
+    --navi-toggler-icon-background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(177, 56, 8, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+
+    --navi-toggler-icon-background-image-hover: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(148, 42, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    --navi-toggler-border-hover: 2px solid rgb(148, 42, 0);
+    --navi-toggler-background-color-hover: rgb(255, 185, 168); 
+
+/* Navigation button: Current One --------------------------*/  
+    --button-present-background-color: rgb(177, 56, 8);
+    --button-present-color: rgb(255, 253, 250);
+    --button-present-border: 2px solid rgb(177, 56, 8);
+    --button-present-pointer-events: none;
+
+/* Navigation button: Other Ones ---------------------------*/  
+    --button-secondary-background-color: rgb(255, 150, 124);
+    --button-secondary-color: rgb(80, 23, 0);
+    --button-secondary-border: 2px solid rgb(177, 56, 8);
+    --button-secondary-margin: 2px;
+    --button-secondary-transition: 1s;
+
+    --button-secondary-hover-color:white;
+    --button-secondary-hover-background-color: rgb(141, 47, 9);
+    --button-secondary-hover-border: 2px solid rgb(141, 47, 9);
+
+/* Theme Changer -------------------------------------------*/  
+    --theme-selector-color: rgb(80, 23, 0);
+    --theme-selector-background-color: rgb(255, 150, 124);
+    --theme-selector-border: 2px solid rgb(80, 23, 0);
+
+    --theme-selector-hover-background-color: rgb(255, 136, 107);
+    --theme-selector-hover-color: rgb(71, 0, 0);
+    --theme-selector-hover-border: 2px solid rgb(71, 0, 0);
+
+/* Binary Rain ---------------------------------------------*/
+    --binary-rain-opacity: 0;
+
+
+/* Container -----------------------------------------------*/   
+    --container-background-color: rgba(255, 120, 120, 0.4);
+    --container-color: rgb(80, 23, 0);
+    --container-margin: 10px, 10px, 10px, 10px;
+    --container-padding: 20px;
+    --container-border: 3px solid;
+    --container-transition: 1s background ease;
+    --container-margin-position: 0 auto;
+    --container-position: relative;
+
+/* Belső container -----------------------------------------------*/  
+    --tablazat-about-background-color: rgba(255, 86, 56, 0.6);
+    --tablazat-about-padding: 20px;
+    --tablazat-about-border: 3px solid;
+    --tablazat-about-transition: 1s background ease;
+
+
+
+
+
+
+/* About profilkép --------------------------------------*/   
+    --img-thumbnail-about-display: inline-block;
+    --img-thumbnail-about-width: 250px;
+    --img-thumbnail-about-margin-left: 30px;
+    --img-thumbnail-about-margin-bottom: 20px;
+    --img-thumbnail-about-border: 4px solid rgb(80, 23, 0);
+    --img-thumbnail-about-transition: 1s;
+
+    --img-thumbnail-about-border-hover: 4px solid rgb(158, 11, 0);
     
-    
+
+
+/* Szövegben lévő linkek --------------------------------------*/  
+        --szoveg-link-color: rgb(255, 187, 156);
+        --szoveg-link-color-hover:rgb(214, 173, 163);
+
+
+/* Parallax ---------------------------------------------------*/
+--parallax-color-hover: rgb(190, 54, 0);
+--parallax-text-shadow-hover: 0 0 10px rgb(255, 72, 0), 
+                              0 0 20px rgb(255, 72, 0),
+                              0 0 40px rgb(255, 72, 0), 
+                              0 0 80px rgb(255, 72, 0),
+                              0 0 120px rgb(255, 72, 0),
+                              0 0 160px rgb(255, 72, 0);
+--parallax-box-shadow-hover: 0 0 10px rgb(255, 72, 0);
+
+
+/* Topológia ---------------------------------------------------*/
+--img-topology-border: 4px solid rgb(80, 23, 0);
+
+--img-topology-border-hover: 4px solid rgb(190, 54, 0);
+--img-topology-box-shadow-hover: 0 0 10px rgb(255, 143, 98),
+                                 0 0 20px rgb(255, 143, 98);
+
 }
-.dark-mode{
+
+.dark{
     color: rgb(255, 255, 255);
     background-image: url('/images/night.jpg');
     background-color: #000000;
@@ -26,76 +142,487 @@ body{
     font-family: "Poppins";
     font-size: large;
     transition: 1s background ease;
+
+/* Loading Page --------------------------------*/ 
+    --loading-page-background-color: black;
+
+
+/* Navigation ----------------------------------*/
+    --navbar-background: rgba(37, 37, 37, 0.6);
+    --navbar-border: 3px solid rgb(255, 255, 255);
+    --navbar-padding: 10px;
+    --navbar-color: white;
+
+/* Logó --------------------------------------*/  
+    --navi-bar-title-font-size: x-large;
+    --navi-bar-title-transition: 0.5s;    
+    --navi-bar-title-color: rgb(255, 255, 255);
+    --navi-bar-title-hover: rgb(186, 255, 252);
+    --navi-bar-title-text-shadow-hover: 0 0 10px rgb(0, 255, 242), 
+                                  0 0 20px rgb(0, 255, 242),
+                                  0 0 40px rgb(0, 255, 242), 
+                                  0 0 80px rgb(0, 255, 242),
+                                  0 0 120px rgb(0, 255, 242),
+                                  0 0 160px rgb(0, 255, 242);
+
+/* Navigation toggler --------------------------------------*/  
+    --navi-toggler-background: rgb(0, 0, 0);
+    --navi-toggler-border: 2px solid white;
+    --navi-toggler-color: white;
+    --navi-toggler-icon-background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+
+    --navi-toggler-icon-background-image-hover: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(186, 255, 252, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    --navi-toggler-border-hover: 2px solid rgb(186, 255, 252);
+    --navi-toggler-box-shadow-hover: 0 0 10px rgb(0, 255, 242),
+                                     0 0 10px rgb(0, 255, 242);
+
+/* Navigation button: Current One --------------------------*/  
+    --button-present-background-color: rgb(255, 255, 255);
+    --button-present-color: rgb(0, 0, 0);
+    --button-present-border: 2px solid rgb(255, 255, 255);
+    --button-present-pointer-events: none;
+
+/* Navigation button: Other Ones ---------------------------*/
+    --button-secondary-background-color: rgb(0, 0, 0);
+    --button-secondary-color: white;
+    --button-secondary-border: 2px solid rgb(255, 255, 255);
+    --button-secondary-margin: 2px;
+    --button-secondary-transition: 1s;
+
+    --button-secondary-hover-color: rgb(186, 255, 252);
+    --button-secondary-hover-background-color: rgb(0, 0, 0);
+    --button-secondary-hover-border: 2px solid rgb(186, 255, 252);
+    --button-secondary-hover-text-shadow: 0 0 10px rgb(0, 255, 242), 
+                                          0 0 20px rgb(0, 255, 242),
+                                          0 0 40px rgb(0, 255, 242), 
+                                          0 0 80px rgb(0, 255, 242);
+    --button-secondary-hover-box-shadow:  0 0 10px rgb(0, 255, 242);
+
+
+/* Theme Changer -------------------------------------------*/  
+    --theme-selector-color: white;
+    --theme-selector-background-color: black;
+    --theme-selector-border: 2px solid white;
+
+    --theme-selector-hover-background-color: rgb(37, 37, 37);
+    --theme-selector-hover-color: rgb(186, 255, 252);
+    --theme-selector-hover-border: 2px solid rgb(186, 255, 252);
+    --theme-selector-hover-text-shadow: 0 0 10px rgb(0, 255, 242), 
+                                  0 0 20px rgb(0, 255, 242),
+                                  0 0 40px rgb(0, 255, 242), 
+                                  0 0 80px rgb(0, 255, 242),
+                                  0 0 120px rgb(0, 255, 242),
+                                  0 0 160px rgb(0, 255, 242);
+    --theme-selector-hover-box-shadow:  0 0 10px rgb(0, 255, 242);
+
+/* Binary Rain ---------------------------------------------*/
+--binary-rain-opacity: 0;
+
+
+/* Container -----------------------------------------------*/   
+    --container-background-color: rgba(0, 0, 0, 0.4);
+    --container-color: white;
+    --container-margin: 10px, 10px, 10px, 10px;
+    --container-padding: 20px;
+    --container-border: 3px solid;
+    --container-transition: 1s background ease;
+    --container-margin-position: 0 auto;
+    --container-position: relative;
+
+/* Belső container -----------------------------------------------*/  
+    --tablazat-about-background-color: rgba(0, 0, 0, 0.6);
+    --tablazat-about-padding: 20px;
+    --tablazat-about-border: 3px solid rgb(255, 255, 255);
+    --tablazat-about-transition: 1s background ease;
+
+
+
+
+/* About profilkép --------------------------------------*/   
+    --img-thumbnail-about-display: inline-block;
+    --img-thumbnail-about-width: 250px;
+    --img-thumbnail-about-margin-left: 30px;
+    --img-thumbnail-about-margin-bottom: 20px;
+    --img-thumbnail-about-border: 4px solid rgb(255, 255, 255);
+    --img-thumbnail-about-transition: 1s;
+
+    --img-thumbnail-about-border-hover: 4px solid rgb(255, 255, 255);
+    --img-thumbnail-about-box-shadow-hover: 0 0 10px rgb(0, 255, 242),
+                                            0 0 20px rgb(0, 255, 242),
+                                            0 0 20px rgb(0, 255, 242);
+
+
+/* Szövegben lévő linkek --------------------------------------*/  
+    --szoveg-link-color: rgb(1, 230, 218);
+    --szoveg-link-color-hover:rgb(128, 212, 223);
+    --szoveg-link-text-shadow-hover: 0 0 10px rgb(0, 255, 242), 
+                                 0 0 20px rgb(0, 255, 242);
+                                 
+
+/* Parallax ---------------------------------------------------*/
+--parallax-color-hover: rgb(186, 255, 252);
+--parallax-text-shadow-hover: 0 0 10px rgb(0, 255, 242), 
+                              0 0 20px rgb(0, 255, 242),
+                              0 0 40px rgb(0, 255, 242), 
+                              0 0 80px rgb(0, 255, 242),
+                              0 0 120px rgb(0, 255, 242),
+                              0 0 160px rgb(0, 255, 242);
+--parallax-box-shadow-hover: 0 0 10px rgb(0, 255, 242);
+
+
+/* Topológia ---------------------------------------------------*/
+--img-topology-border: 4px solid rgb(124, 124, 124);
+
+--img-topology-border-hover: 4px solid rgb(186, 255, 252);
+--img-topology-box-shadow-hover: 0 0 10px rgb(0, 255, 242),
+                                 0 0 20px rgb(0, 255, 242);
+
 }
+
+.cyber{
+    /*background-image: url('/images/afternoon.jpg');*/
+    background-color: #000000;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins";
+    font-size: large;
+    transition: 1s background ease;
+
+/* Loading Page --------------------------------*/ 
+    --loading-page-background-color: black;
+
+
+/* Navigation ----------------------------------*/
+    --navbar-background: rgba(37, 37, 37, 0.6);
+    --navbar-border: 3px solid rgb(44, 156, 0);
+    --navbar-padding: 10px;
+    --navbar-color: white;
+    --navbar-box-shadow: 0 0 20px rgb(72, 255, 0);
+
+/* Logó --------------------------------------*/
+    --navi-bar-title-font-size: x-large;
+    --navi-bar-title-transition: 0.5s;
+    --navi-bar-title-color: rgb(255, 255, 255);
+    --navi-bar-title-text-shadow: 0 0 10px rgb(72, 255, 0), 
+                                  0 0 20px rgb(72, 255, 0),
+                                  0 0 40px rgb(72, 255, 0), 
+                                  0 0 80px rgb(72, 255, 0),
+                                  0 0 120px rgb(72, 255, 0),
+                                  0 0 160px rgb(72, 255, 0),
+                                  0 0 180px rgb(72, 255, 0);
+
+    --navi-bar-title-hover: rgb(255, 255, 255);
+    --navi-bar-title-text-shadow-hover: 0 0 10px rgb(255, 0, 0), 
+                                  0 0 20px rgb(255, 0, 0),
+                                  0 0 40px rgb(255, 0, 0), 
+                                  0 0 80px rgb(255, 0, 0),
+                                  0 0 120px rgb(255, 0, 0),
+                                  0 0 160px rgb(255, 0, 0);
+
+/* Navigation toggler --------------------------------------*/  
+    --navi-toggler-background: rgb(0, 0, 0, 0.5);
+    
+    --navi-toggler-color: rgb(44, 156, 0);
+    --navi-toggler-icon-background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(44, 156, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    --navi-toggler-box-shadow: 0 0 10px rgb(72, 255, 0),
+                               0 0 10px rgb(72, 255, 0);
+
+
+    --navi-toggler-color-hover: rgb(255, 149, 149);
+    --navi-toggler-icon-background-image-hover: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 149, 149, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    --navi-toggler-box-shadow-hover: 0 0 10px rgb(255, 0, 0),
+                                     0 0 10px rgb(255, 0, 0);
+
+/* Navigation button: Current One --------------------------*/  
+    --button-present-background-color: rgb(213, 255, 196);
+    --button-present-color: rgb(0, 0, 0);
+    --button-present-border: 2px solid rgb(213, 255, 196);
+    --button-present-pointer-events: none;
+    --button-present-box-shadow: 0 0 10px rgb(72, 255, 0), 
+                                  0 0 20px rgb(72, 255, 0),
+                                  0 0 40px rgb(72, 255, 0), 
+                                  0 0 80px rgb(72, 255, 0);
+                                  
+
+/* Navigation button: Other Ones ---------------------------*/  
+    --button-secondary-background-color: rgb(0, 0, 0);
+    --button-secondary-color: rgb(213, 255, 196);
+    --button-secondary-border: 2px solid rgb(213, 255, 196);
+    --button-secondary-margin: 2px;
+    --button-secondary-transition: 1s;
+
+    --button-secondary-hover-color: rgb(255, 255, 255);
+    --button-secondary-hover-background-color: rgb(0, 0, 0);
+    --button-secondary-hover-border: 2px solid rgb(255, 255, 255);
+    --button-secondary-hover-text-shadow: 0 0 10px rgb(255, 0, 0), 
+                                          0 0 20px rgb(255, 0, 0),
+                                          0 0 40px rgb(255, 0, 0), 
+                                          0 0 80px rgb(255, 0, 0);
+    --button-secondary-hover-box-shadow:  0 0 10px rgb(255, 0, 0),
+                                          0 0 20px rgb(255, 0, 0);
+
+
+/* Theme Changer -------------------------------------------*/  
+    --theme-selector-color: rgb(213, 255, 196);
+    --theme-selector-background-color: black;
+    --theme-selector-border: 2px solid rgb(213, 255, 196);
+    --theme-selector-text-shadow: 0 0 10px rgb(72, 255, 0), 
+                                  0 0 20px rgb(72, 255, 0),
+                                  0 0 40px rgb(72, 255, 0), 
+                                  0 0 80px rgb(72, 255, 0),
+                                  0 0 120px rgb(72, 255, 0),
+                                  0 0 160px rgb(72, 255, 0);
+    --theme-selector-box-shadow:  0 0 10px rgb(72, 255, 0);
+
+    --theme-selector-hover-background-color: rgb(0, 0, 0);
+    --theme-selector-hover-border:2px solid rgb(255, 255, 255);
+    --theme-selector-hover-box-shadow: 0 0 10px rgb(255, 0, 0);
+    --theme-selector-hover-color: rgb(255, 255, 255);
+    --theme-selector-hover-text-shadow: 0 0 10px rgb(255, 0, 0), 
+                                        0 0 20px rgb(255, 0, 0),
+                                        0 0 40px rgb(255, 0, 0), 
+                                        0 0 80px rgb(255, 0, 0),
+                                        0 0 120px rgb(255, 0, 0),
+                                        0 0 160px rgb(255, 0, 0);
+    
+/* Binary Rain ---------------------------------------------*/
+    --binary-rain-opacity: 1;
+
+
+/* Container -----------------------------------------------*/   
+    --container-background-color: rgba(0, 0, 0, 0.4);
+    --container-color: rgb(213, 255, 196);
+    --container-margin: 10px, 10px, 10px, 10px;
+    --container-padding: 20px;
+    --container-border: 3px solid rgb(44, 156, 0);
+    --container-transition: 1s background ease;
+    --container-margin-position: 0 auto;
+    --container-position: relative;
+    --container-box-shadow: 0 0 10px rgb(72, 255, 0);
+                            
+                            
+
+/* Belső container -----------------------------------------------*/  
+    --tablazat-about-background-color: rgba(0, 0, 0, 0.6);
+    --tablazat-about-padding: 20px;
+    --tablazat-about-border: 3px solid rgb(213, 255, 196);
+    --tablazat-about-box-shadow: 0 0 10px rgb(72, 255, 0),
+                                 0 0 20px rgb(72, 255, 0);
+    --tablazat-about-transition: 1s background ease;
+
+
+
+
+/* About profilkép --------------------------------------*/   
+    --img-thumbnail-about-display: inline-block;
+    --img-thumbnail-about-width: 250px;
+    --img-thumbnail-about-margin-left: 30px;
+    --img-thumbnail-about-margin-bottom: 20px;
+    --img-thumbnail-about-border: 4px solid rgb(213, 255, 196);
+    --img-thumbnail-about-box-shadow: 0 0 10px rgb(72, 255, 0),
+                                      0 0 20px rgb(72, 255, 0);
+    --img-thumbnail-about-transition: 1s;
+
+    --img-thumbnail-about-border-hover: 4px solid rgb(255, 255, 255);
+    --img-thumbnail-about-box-shadow-hover: 0 0 10px rgb(255, 0, 0),
+                                            0 0 20px rgb(255, 0, 0),
+                                            0 0 20px rgb(255, 0, 0);
+
+/* Szövegben lévő linkek --------------------------------------*/  
+    --szoveg-link-color: rgb(213, 255, 196);
+    --szoveg-link-text-shadow: 0 0 10px rgb(72, 255, 0),
+                              0 0 20px rgb(72, 255, 0);
+    --szoveg-link-color-hover:rgb(255, 186, 186);
+    --szoveg-link-text-shadow-hover: 0 0 10px rgb(255, 0, 0),
+                                     0 0 20px rgb(255, 0, 0);
+                
+/* Parallax ---------------------------------------------------*/
+    --parallax-color-hover: rgb(213, 255, 196);
+    --parallax-text-shadow-hover: 0 0 10px rgb(72, 255, 0), 
+                                  0 0 20px rgb(72, 255, 0),
+                                  0 0 40px rgb(72, 255, 0), 
+                                  0 0 80px rgb(72, 255, 0),
+                                  0 0 120px rgb(72, 255, 0),
+                                  0 0 160px rgb(72, 255, 0);
+    --parallax-box-shadow-hover: 0 0 10px rgb(72, 255, 0);
+
+
+/* Topológia ---------------------------------------------------*/
+    --img-topology-border: 4px solid rgb(121, 224, 81);
+
+    --img-topology-border-hover: 4px solid rgb(167, 255, 117);
+    --img-topology-box-shadow-hover: 0 0 10px rgb(72, 255, 0),
+                                     0 0 20px rgb(72, 255, 0);
+
+}
+/*--------------------------------------------------------------------------------*/
+
+canvas{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transition: 1s;
+}
+
+#background_rain{
+    opacity: var(--binary-rain-opacity);
+}
+
 
 
 .navbar-expand-md{
-    background-color: rgba(255, 86, 56, 0.6);
-    border: 3px solid rgb(128, 41, 7);
-    padding: 10px;
-}
-.dark-mode-nav{
-    background-color: rgba(37, 37, 37, 0.6);
-    border: 3px solid rgb(255, 255, 255);
-    color: rgb(255, 255, 255);;
-}
-
-
-.navi-toggler{
-    background-color: rgb(253, 148, 115);
-    border: 2px solid rgb(177, 56, 8);
-}
-.navi-toggler-dark{
-    background-color: rgb(0, 0, 0);
-    border: 2px solid white;
+    background-color: var(--navbar-background);
+    border: var(--navbar-border);
+    padding: var(--navbar-padding);
+    box-shadow: var(--navbar-box-shadow);
 }
 
 
 .navi-bar-title{
-    color: rgb(80, 23, 0);
-    pointer-events: none;
-    font-size: x-large;
+    color: var(--navi-bar-title-color);
+    font-size: var(--navi-bar-title-font-size);
+    text-shadow: var(--navi-bar-title-text-shadow);
+    transition: var(--navi-bar-title-transition);
+
 }
-.navi-bar-title-dark{
-    color:rgb(255, 255, 255);
-    pointer-events: none;
-    font-size: x-large;
+.navi-bar-title:hover{
+    color: var(--navi-bar-title-hover);
+    text-shadow: var(--navi-bar-title-text-shadow-hover);
 }
+
+
+.navi-toggler{
+    background-color: var(--navi-toggler-background); 
+    color: var(--navi-toggler-color);
+    box-shadow: var(--navi-toggler-box-shadow);
+    transition: 0.5s;
+    border: var(--navi-toggler-border)
+}
+.navi-toggler-icon{
+    background-image: var(--navi-toggler-icon-background-image);
+}
+.navi-toggler:hover{
+    box-shadow: var(--navi-toggler-box-shadow-hover);
+    background-color: var(--navi-toggler-background-hover); 
+    color: var(--navi-toggler-color-hover);
+    border: var(--navi-toggler-border-hover);
+    background-color: var( --navi-toggler-background-color-hover);
+   
+}
+.navi-toggler-icon:hover{
+    background-image: var(--navi-toggler-icon-background-image-hover);
+}
+
+.button-present{
+    background-color: var(--button-present-background-color);
+    color: var(--button-present-color);
+    border: var(--button-present-border);
+    pointer-events: var(--button-present-pointer-events);
+    box-shadow: var(--button-present-box-shadow);
+}
+
+.button-secondary{
+    background-color: var(--button-secondary-background-color);
+    color: var(--button-secondary-color);
+    border: var(--button-secondary-border);
+    margin: var(--button-secondary-margin);
+    transition: var(--button-secondary-transition);
+}
+.button-secondary:hover{
+    background-color: var(--button-secondary-hover-background-color);
+    color: var(--button-secondary-hover-color);
+    border: var(--button-secondary-hover-border);
+    text-shadow: var(--button-secondary-hover-text-shadow);
+    box-shadow: var(--button-secondary-hover-box-shadow);
+    transition: var(--button-secondary-transition);
+}
+
+#theme-selector{
+    color: var(--theme-selector-color);
+    background-color: var(--theme-selector-background-color);
+    border: var(--theme-selector-border);
+    text-shadow: var(--theme-selector-text-shadow);
+    box-shadow: var(--theme-selector-box-shadow);
+    transition: 0.5s;
+    width: 120px;
+}
+#theme-selector:hover{
+    background-color: var(--theme-selector-hover-background-color);
+    color:var(--theme-selector-hover-color);
+    text-shadow: var(--theme-selector-hover-text-shadow);
+    border: var(--theme-selector-hover-border);
+    box-shadow: var(--theme-selector-hover-box-shadow);
+}
+
+
+
+
+.container-md{
+    background-color: var(--container-background-color);
+    color: var(--container-color);
+    margin: var(--container-margin);
+    padding: var(--container-padding);
+    border: var(--container-border);
+    transition: var(--container-transition);
+    position: var(--container-position);
+    margin: var(--container-margin-position);
+    box-shadow: var(--container-box-shadow);
+}
+
+.tablazat-about{
+    background-color: var(--tablazat-about-background-color);
+    padding: var(--tablazat-about-padding);
+    border: var(--tablazat-about-border);
+    transition: var(--tablazat-about-transition);
+    box-shadow: var(--tablazat-about-box-shadow);
+}
+
+
+
+.img-thumbnail-about{
+    display: var(--img-thumbnail-about-display);
+    width: var(--img-thumbnail-about-width);
+    margin-left: var(--img-thumbnail-about-margin-left);
+    margin-bottom: var(--img-thumbnail-about-margin-bottom);
+    border: var(--img-thumbnail-about-border);
+    box-shadow: var(--img-thumbnail-about-box-shadow);
+    transition: var(--img-thumbnail-about-transition);
+}
+.img-thumbnail-about:hover{
+    box-shadow: var(--img-thumbnail-about-box-shadow-hover);
+    border: var(--img-thumbnail-about-border-hover);
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
 
 .image-profile{
     text-align: right;
 }
 
-.img-thumbnail-about{
-    display: inline-block;
-    width: 250px;
-    margin-left: 30px;
-    margin-bottom: 20px;
-    border: 4px solid;
+#topology{
+    text-align: center;
 }
-.img-thumbnail-about-dark{
-    display: inline-block;
-    width: 250px;
-    margin-left: 30px;
-    margin-bottom: 20px;
-    border: 4px solid rgb(255, 255, 255);
-}
+
 
 .img-exp{
+    width: 90%;
     margin: 10px, 10px, 10px, 10px;
-    padding: 10px;
-    border-radius: 25px;
+    margin-top: 30px;
+    border-radius: 30px;
+    transition: 0.5s;
+    border: var(--img-topology-border);
 }
 .img-exp:hover{
-    box-shadow: 
-    inset 5px 5px 10px #dddddd, 
-    inset -5px -5px 10px #dddddd;
-    border-radius: 25px;
+    border: var(--img-topology-border-hover);
+    box-shadow: var(--img-topology-box-shadow-hover);
 }
 
-.dark-nav-link{
-    color: white;
-}
 
 .btn-light{
     margin: 2px;
@@ -103,55 +630,8 @@ body{
 }
 
 
-.nav-link{
-    color: rgb(255, 255, 255);
-}
-
 h1{
     text-align: center;
-}
-
-.navbar-light{
-    color:rgb(255, 255, 255);
-}
-
-.container-md{
-    background-color: rgba(255, 120, 120, 0.4);
-    color:rgb(80, 23, 0);
-    margin: 10px, 10px, 10px, 10px;
-    padding: 20px;
-    border: 3px solid;
-    transition: 0.5s background ease;
-    margin: 0 auto;
-    position: relative;
-}
-.dark-mode-container-md{
-    background-color: rgba(0, 0, 0, 0.4);
-    color:white;
-    margin: 10px, 10px, 10px, 10px;
-    padding: 20px;
-    border: 3px solid;
-    transition: 0.5s background ease;
-    margin: 0 auto;
-    position: relative;
-    
-}
-
-.tablazat-about{
-    background-color: rgba(255, 86, 56, 0.6);
-    padding: 20px;
-    border: 3px solid;
-    transition: 0.5s background ease;
-}
-.tablazat-about-dark{
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border: 3px solid rgb(255, 255, 255);
-    transition: 0.5s background ease;
-}
-
-.tablazat{
-   padding: 20px;
 }
 
 .vonal{
@@ -165,62 +645,15 @@ h1{
     margin: 10px;
 }
 
-
-.button-present{
-    background-color: rgb(177, 56, 8);
-    color: rgb(255, 253, 250);
-    border: 2px solid rgb(177, 56, 8);
-    pointer-events: none;
-}
-.button-present-dark{
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    border: 2px solid rgb(255, 255, 255);
-    pointer-events: none;
-}
-
-.button-secondary{
-    background-color: rgb(255, 150, 124);
-    color: rgb(80, 23, 0);
-    border: 2px solid rgb(177, 56, 8);
-    margin: 2px;
-}
-.button-secondary-dark{
-    background-color: rgb(0, 0, 0);
-    color: white;
-    border: 2px solid rgb(255, 255, 255);
-    margin: 2px;
-}
-
-.button-secondary:hover{
-    color:white;
-    background-color: rgb(141, 47, 9);
-    border: 2px solid rgb(141, 47, 9);
-}
-.button-secondary-dark:hover{
-    color:rgb(0, 0, 0);
-    background-color: rgb(216, 216, 216);
-    border: 2px solid rgb(216, 216, 216);
-}
-
-.navibar-title{
-    color: black;
-    margin-right: 20px;
-    margin-left: 10px;
-    transition: 0.5s background ease;
-}
-
-#nav_gomb{
-    border: 1px solid;
-}
-
-#dark_mode{
+.dark_mode{
     text-align: right;
+    font-family: Poppins;
 }
+
 
 p, h4, h5{
     margin: 10px;
-    transition: 0.5s background ease;
+    transition: 1s;
 }
 
 h5, h4{
@@ -228,104 +661,24 @@ h5, h4{
 }
 
 
-#dark_label{
-    width: 102px;
-    height: 40px;
-    position: relative;
-    background: #76cdff;
-    border: 1px solid rgb(255, 0, 0);
-    border-radius: 200px;
-    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
-    cursor: pointer;
-}
-
-#dark_label:after{
-    content: "";
-    width: 40px;
-    height: 39px;
-    position: absolute;
-    top:0px;
-    left:0px;
-    background: linear-gradient(180deg,#ffcc89,#d8860b);
-    border: 1px solid rgb(255, 0, 0);
-    border-radius: 300px;
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
-}
-
-input{
-    width: 0;
-    height: 0;
-    visibility: hidden;
-}
-
-input:checked + #dark_label{
-    background: #252525;
-    border: 1px solid white;
-}
-
-input:checked + #dark_label:after, .anyad{
-    left:100px;
-    transform: translateX(-100%);
-    background: linear-gradient(180deg,#777,#3a3a3a);
-    border: 1px solid rgb(255, 255, 255);
-}
-
-#dark_label, #dark_label:after {
-    transition: 0.3s
-}
-
-#dark_label:active:after{ 
-    width: 40px; 
-}
-
-input:checked + #dark_label + #container_main{
-    background:#242424;
-}
-
-#dark_label svg{
-    position: absolute;
-    width: 30px;
-    top:30px;
-    z-index: 100;
-}
-
-#dark_label svg.sun{
-    left:5px;
-    top: 5px;
-    fill:#0a0000;
-    transition: 0.3s;
-}
-
-#dark_label svg.moon{
-    left:65px;
-    top: 5px;
-    fill:#000000;
-    transition: 0.3s;
-}
-
-input:checked + #dark_label svg.sun{
-    fill:#ffffff;
-}
-
-input:checked + #dark_label svg.moon{
-    fill:#fff;
-}
-
-.dark_theme_label{
-    border: 1px solid rgb(255, 255, 255);
-}
-
 .parallax{
-    background: url("images/parallax.jpg") repeat fixed 100%;
+    /*background: url("images/parallax.jpg") repeat fixed 100%;*/
     height: 200px;
     border: 4px solid;
     margin: 10px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background: url("images/parallax.jpg") no-repeat fixed 100%;
+    transition: 0.5s;
+}
+.parallax:hover{
+    color: var(--parallax-color-hover);
+    text-shadow: var(--parallax-text-shadow-hover);
+    box-shadow:  var(--parallax-box-shadow-hover);
 }
 .parallax-inner{
-    font-size: 40px;
+    font-size: 35px;
     position: absolute;
     margin-top: 60px;
     right: 5px;
@@ -337,5 +690,21 @@ input:checked + #dark_label svg.moon{
 #index_img_title{
     /*color: rgb(0, 255, 242);*/
       color: white;
+      transition: 0.5s;
 }
 
+#index_img_title:after{
+    transition: 0.5s;
+}
+
+.szoveg-link{
+    text-decoration: none;
+    color: var(--szoveg-link-color);
+    text-shadow: var(--szoveg-link-text-shadow);
+    transition: 0.5s;
+}
+.szoveg-link:hover{
+    color: var(--szoveg-link-color-hover);
+    text-shadow: var(--szoveg-link-text-shadow-hover);
+
+}
