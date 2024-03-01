@@ -5,33 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/ohh.png"/>
     <title> Tapasztalataim - KiralysokA </title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <script src="javascript.js"></script> 
-  </head>
+    <style>
+
+
+      
+
+    </style>
+</head>
 <body class="default">
   <br>
     <canvas id="background_rain"></canvas>
+    <canvas id="starfield"></canvas>
 
     <div class="container-md col-lg-9 col-md-10 col-sm-9 col-xs-12" id="container_main">
       <nav class="navbar navbar-expand-md navbar-light" id="navbar_01">
         <a class="navbar-brand navi-bar-title" id="navbar_brand_title" href="https://www.kiralysoka.hu">KiralysokA</a>
-        <button id="nav_toggler" class="navbar-toggler navi-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button id="nav_toggler" class="navbar-toggler navi-toggler" type="button" data-toggle="collapse" 
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+        aria-expanded="false" aria-label="Toggle navigation" onclick="Collapse()">
           <span class="navbar-toggler-icon navi-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" id="collapse">
           <ul class="navbar-nav mr-auto" id="navigator">
-            <li class="nav-item">
+            <li class="nav-item" >
               <p> </p>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a href="index.html" class="btn btn-light button-secondary" id="nav_button_third">Főoldal<span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
                 <a href="about.html" class="btn btn-light button-secondary" id="nav_button_secondary">Rólam<span class="sr-only"></span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="btn btn-light button-present" id="nav_button_present">Tapasztalataim<span class="sr-only"></span></a>
             </li>
           </ul>
@@ -45,13 +54,16 @@
 
       <br>
 
-      <div class="dark_mode">
-        <label for="theme-selector">Oldal témája: </label>
-        <select id="theme-selector">
-          <option value="default" class="selector">Világos</option>
-          <option value="dark" class="selector">Sötét</option>
-          <option value="cyber" class="selector">Mátrix</option>
-        </select>
+      <div class="selector">
+        <div class="selector-inner">
+          <label for="theme-selector">Oldal témája: </label>
+            <select id="theme-selector">
+              <option value="default" class="selector">Világos</option>
+              <option value="dark" class="selector">Sötét</option>
+              <option value="matrix" class="selector">Mátrix</option>
+              <!--<option value="matrix-breached"> Mátrix (Breached)</option>-->
+            </select>
+        </div>
       </div>
 
         <br>
@@ -62,7 +74,7 @@
             <br>
 
         <div class="tablazat-about container-sm" id="tablazat_about">
-          <h4>Bevezető</h4>
+          <h3>Bevezető</h3>
             <p>
                Igaz, hogy jelenleg pályakezdőnek mondhatom magam, viszont nem feltétlen kell munkatapasztalat ahhoz, hogy
                az ember tapasztaltnak mondja magát.
@@ -81,7 +93,7 @@
             <hr class="about_vonal">
             <br>
 
-          <h4>Vizsgaremek</h4>
+          <h3>Vizsgaremek</h3>
             <p>
                Mikor elkezdtem a rendszer- és alkalmazás-üzemeltető technikusi képzést, egy 3 fős csapatba kellett
                csatlakoznom, mivel a tanév végén lévő vizsgák egyike volt, hogy a csapat projektjét 
@@ -94,9 +106,9 @@
             <hr class="about_vonal">
             <br>
 
-          <h4>Magyar Nemzeti Múzeum</h4>
+          <h3>Magyar Nemzeti Múzeum</h3>
             <p>
-              A Magyar Nemzeti Múzeum projekt, mint ahogy a nevében is benne van a Magyar Nemzeti Múzeumról szólt, a továbbiakban MNM-ként hivatkozom rá.
+              A Magyar Nemzeti Múzeum projekt, mint ahogy a nevében is benne van a Magyar Nemzeti Múzeumról szól, a továbbiakban MNM-ként hivatkozom rá.
               A projekt lényege, hogy az MNM számára kellett kialakítani egy működőképes és biztonságos hálózatot, hogy
               az MNM dolgozói gondtalanul dolgozhassanak a mindennapokban.
             </p>
@@ -106,121 +118,503 @@
             </p>
 
           <div id="topology">
-           <a href="images/Topology.png" target="_blank">
-            <img src="images/Topology.png" title="A múzeum topológiája" alt="A múzeum topológiája" class="img-exp">
+           <a href="images/topology.png" target="_blank">
+            <img src="images/topology.png" title="A múzeum topológiája" alt="A múzeum topológiája" class="topology-light">
            </a>
           </div>
 
-          <br>
-          <br>
+          
 
           <p>
-            Ahh...
+            Az alábbi részlegek elnevezései, (területük színei):
           </p>
+          <p>
+            - Központi Adattár (Türkiz Kék)
+            <br>
+            - Pénztár (Világos Lila)
+            <br>
+            - Rendezvényszervezési Főosztály (Lila)
+            <br>
+            - Távmunkás (Fehér)
+            <br>
+            - Régészeti Főosztály (Világos zöld)
+            <br>
+            - Pénzügyi és Gazdasági Iroda (Zöld)
+            <br>
+            - Az MNM szerverszobája (Narancssárga)
+            <br>
+            - Ügyfélszolgálat (Citromsárga)
+          </p>
+            <br>
+          
+            <hr class="about_vonal">
+            <br>
+
+          <h3>Az MNM hálózatának néhány sajátassága</h3>
+          
+          <h4>Gerinchálózat</h4>
+
+          <p>
+            A területek összeköttetéséhez egy gerinchálózatot alakítottunk ki, amelyet a lenti képen
+            látható 6 router (R1-R6) képvisel.
             
+          </p>
+          <div id="topology">
+            <a href="images/backbone.png" target="_blank">
+             <img src="images/backbone.png" title="A múzeum gerinchálózata" alt="A múzeum topológiája" class="topology-light">
+            </a>
+           </div>
+
+          <h5>EIGRP (Enhanced Interior Gateway Routing Protocol)</h5>
+          <p>
+             A gerinchálózatban és a részlegek hálózatai közt EIGRP forgalomirányítási protokollt alkalmaztunk,
+             annak érdekében, hogy a részlegek tudjanak kommunikálni az MNM-ben lévő többi részleggel, illetve, hogy hozzáférésük legyen az MNM szervereinek
+             szolgáltatásaihoz és az MNM-en kívüli szolgáltató (ISP) szolgáltatásaihoz.
+          </p>
+          <br>
+          <p>
+            A következő képen az EIGRP-vel konfigurált interface-ek láthatók, amelyek az R1-en lettek kiadva:
+          </p>
+          <div id="topology">
+            <a href="images/EIGRP_1.png" target="_blank">
+             <img src="images/EIGRP_1.png" title="EIGRP ellenőrzés" alt="A múzeum topológiája" class="topology-light">
+            </a>
+           </div>
+          <p>
+            Az MNM routerei között EIGRP-n belül MD5-ös hitelesítést kaptak, annak érdekében,
+            hogy a routerek csak az adminisztrátor által konfigurált routerek csatlakozzanak egymáshoz a hálózatban,
+            minden más csatlakozni kívánt eszköz nem lesz képes a routerekre csatlakozni hitelesítés nélkül.
+          </p>
+          <br>
+          <p>
+            Az R1 Serial0/0/1-es interface-én kiadott MD5-ös hitelesítés konfigurációja:
+            <div id="topology">
+              <a href="images/EIGRP_MD5.png" target="_blank">
+               <img src="images/EIGRP_MD5.png" title="EIGRP MD5-ös hitelesítés parancs" alt="" class="topology-dark">
+              </a>
+             </div>
+          </p>
+
+          <br>
+
+          <h5>PPP (Point-to-Point Protocol)</h5>
+          <p>
+            Az MNM határ routere (R3) és az ISP között PPP, azaz Point to Point kapcsolat van.
+            Ezért CHAP (Challange-Handshare Authentication Protocol) hitelesítés lett használva.
+            A CHAP segítségével képesek vagyunk egy olyan hitelesítést kialakítani, amely a két router egymás felhasználója és jelszava által 
+            képes hitelesíteni a kettőjük közti kapcsolatot.
+          </p>
+          <p>
+            A CHAP-hez szükséges, hogy mindkét router tisztában legyen egymás felhasználójával és jelszavával.
+            Ha a CHAP működőképes, akkor csak azzal az eszközzel csatlakozik az adott interface-en, 
+            amely felhasználója és jelszava megtalálható a saját adatbázisában, más eszközzel a kapcsolat nem lehetséges.
+
+            <div class="teszt-ez-itt" style="height: 100%; z-index: 9; display: block;">
+              <div style="width: 100%; height: 100%; margin-right: 10px;  padding: 20px;">
+                <div class="slidershow middle">
+                  <div class="slides" >
+                    <input type="radio" name="r" id="r1" checked>
+                    <input type="radio" name="r" id="r2">
+                    <input type="radio" name="r" id="r3">
+                    <input type="radio" name="r" id="r4">
+                    <input type="radio" name="r" id="r5">
+                    <div class="slide s1 image" style="position:relative;">
+                      <a href="images/PPP_R3-ISP.png" target="_blank">
+                        <img src="images/PPP_R3-ISP.png" title="PPP ellenőrzése R3-on" style="height: 100%; width: 100%; position:relative;">
+                        <div class="bottom-left">PPP ellenőrzése</div>
+                        <div class="top-left">1 / 2</div>
+                      </a>
+                    </div>
+                    <div class="slide image" style="position:relative;">
+                      <a href="images/CHAP_R3-ISP.png" target="_blank">
+                        <img src="images/CHAP_R3-ISP.png" title="PPP ellenőrzése az ISP-n" alt="" style="height: 100%; width: 100%; position:relative;">
+                        <div class="bottom-left">CHAP konfiguráció</div>
+                        <div class="top-left">2 / 2</div>
+                      </a>
+                    </div>
+                    <div class="slide image" style="position:relative;">
+                      <a href="" target="_blank">
+                        <img src="" title="A CHAP configurációja R3-on" alt="" style="height: 100%; width: 100%; position:relative;">
+                        <div class="bottom-left"></div>
+                        <div class="top-left">3 / 3</div>
+                      </a>
+                    </div>
+                    <div class="slide image">
+                      <img src="images/afternoon.jpg" alt="">
+                    </div>
+                    <div class="slide image">
+                      <img src="images/afternoon.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                
+                
+                <div class="navigator" style="text-align: center">
+                  <label for="r1" class="bar"><p class="bar-number">1</p></label> 
+                  <label for="r2" class="bar"><p class="bar-number">2</p></label>
+                  <!--<label for="r3" class="bar"><p class="bar-number">3</p></label>-->
+                </div>
+              </div>
+            </div>
+          </p>
+
+          <br>
+
+          <h5>IPsec</h5>
+          <p>
+            A gerinchálózat és a távmunkás közöt IPsec VPN lett kialakítva, annak érdekében, hogy a távmunkás
+            biztonságosan képes legyen intézni a munkáját az MNM számára otthonról.
+            <div id="topology">
+              <img src="images/IPsec_R3-HOME.png" title="" alt="" class="topology-light">
+            </div>
+          </p>
+          <p>
+            Az IPsec képes megvédeni virtuálisan bármely alkalmazás forgalmát, mivel a védelem 
+            az OSI modell 4. rétegétől a 7. rétegéig bárhol megvalósítható.
+          </p>
+          
+
+          <hr class="about_vonal">
+          <br>
+
+          <h4>Redundáns megoldások</h4>
+          <p>
+            A hálózatok kialakításakor számítanunk kell a lehetséges problémákra,
+            illetve, hogy mennyire tudjuk csökkenteni az adott probléma esélyeit arra,
+            hogy valós probléma legyen belőle.
+          
+            Elsősorban ezért is fontos a redundancia, amely a hálózatban arra szolgál, hogy több útvonal álljon rendelkezésünkre
+            még akkor is, ha a hálózat főútvonala valamilyen oknál fogva meghibásodik.
+          </p>
+          <p>
+            Itt, az MNM számára minden részlegnél STP-t, illetve a nagyobb részlegeknél HSRP-t alkalmaztunk,
+            amelyek a redundás hálózatok kialakítását segítik elő.
+          </p>
+          <br>
+
+          <h5>STP (Spanning Tree Protocol)</h5>
+          <p>
+            Az STP segítségével kitudjuk használni a redundáns kapcsolatok előnyeit, azok hátrányai nélkül.
+            Az STP célja egyrészt egy hurokmentes topológia kialakítása, tehát egy olyan hálózat kialakítása, ahol például nem fordulhat elő szórási vihar (broadcast storm),
+            amely a hálózat lelassításához, végül leállásához vezethet;
+            másrészt pedig szakadás esetén
+            a redundás tartalék kapcsolat mielőbbi felélesztése.
+          </p>
+          <p>
+            Az STP 2. rétegbeli redundáns megoldás, tehát a munkakörökön belül, a switchek számára lett kialakítva.
+            <br>
+            Itt, például a Központi Adattárban a switchek közt megtalálható:
+            <div id="topology">
+              <img src="images/STP_01.png" title="" alt="" class="topology-light" style="aspect-ratio: 16/9;">
+            </div>
+          </p>
+          <br>
+
+          <h5>HSRP (Hot Standby Router Protocol)</h5>
+          <p>
+            A HSRP a Cisco saját fejlesztésű FHRP-je (First Hop Redundancy Protocol), 
+            amely a routerek számára kialakított 3. rétegbeli redundáns megoldásként felel meg.
+          </p>
+          <p>
+            A HSRP működéséhez kell egy aktív és egy készenléti (standby) router.
+            Az aktív router végzi a forgalomirányítást, míg a standby router készenléti állapotban van, azaz hogy ha az
+            aktív router valamiért képtelen a feladatai elvégzésére, akkor a standby router aktív módba kapcsol át, 
+            ameddig az eredeti aktív router hibaelhárítása le nem zajlik.
+            Addig is a standby router az aktív router feladatait végzi. 
+          </p>
           <hr class="about_vonal">
           <br>
           
-          <h4>Végszó</h4>
+          <h4>Munkakörök kialakítása</h4>
+          <p>
+            Az MNM minden részlegének hálózata négy alhálózatra van szedve a különböző munkakörök számára.
+          </p>
+          <p>
+            A munkakörök eszerint különböző vlanokat kaptak.
+          </p>
+          <br>
+          <h5>VLAN (Virtual Local Area Network)</h5>
+          <p>
+            A VLAN logikai kapcsolatra épülő helyi hálózat, 
+            amelyel lehetséges különböző hálózatok kialakítása egy interface-en 
+            alinterface-ek segítségével, ezzel a különböző joosultságú 
+            felhasználókat elszegmentálva. 
+          </p>
+          <p>
+            Az MNM számára minden részlegen a munkakörök és (vlan kiosztások) a következők: 
+          </p>
+          <p>
+            - Dolgozó (10-es vlan)
+            <br>
+            - Titkár (20-es vlan)
+            <br>
+            - Admin (30-es vlan)
+            <br>
+            - Főnök (40-es vlan)
+          </p>
+
+          <br>
+
+          <h5>Native VLAN</h5>
+          <p>
+            A munkakörök vlan-jain kívül kiosztottuk minden részlegen egy 99-es Vlant, amely Native Vlan-ként szolgál, 
+            ezzel is nagyobb védelmet biztosítva a hálózatnak, mivel az alapértelmezett 1-es Vlan-t 
+            meghagyva Native Vlan-ként hálózatbiztonsági kockázat lenne.
+          </p>
+          <p>
+            A native VLAN a címkézetlen forgalmak miatt lett kialakítva, annak érdekében, hogy elkerüljük a VLAN ugrás (hopping),
+            illetve VLAN dupla címkézéses (double-tagging) támadásokat.
+          </p>
+
+          <br>
+          
+          <h5>IPv4 és IPv6 címkiosztások</h5>
+          <p>
+            Az MNM minden részlege között dinamikusan és statikusan lettek IPv4-es címek kiosztva, 
+            a dolgozók közt dinamikusan, minden más munkakörnél statikusan.
+          </p>
+          <p>
+            Az IPv6 csak bizonyos részlegeken található. Statikusan kiosztott IPv6 a Rendezvényszervezési Főosztályon 
+            és a gerinchálózatban, míg dinamikusan a Pénzügyi és Gazdasági Iroda dolgozói számára DHCPv6 segítségével.
+          </p>
+          
+          <!--------------------------------------------------------------------------------------------------------->
+        
+          <p>
+            Egyenlőre a Múzeum számára az IPv6 tesztelés alatt áll. 
+            A Múzeum hálózata eddig csak IPv4-es címzéssel működött, 
+            viszont idővel teljesen IPv6-ra szeretne átállni. 
+          </p>
+
+          <hr class="about_vonal">
+          <br>
+
+          <h4>Jelszavak, titkosítások, jogosultságok</h4>
+          <p>
+            Az MNM összes routerére és switchére ki lettek oszva titkosított jelszavak, SSH, és minden MNM routerre készült kiterjesztett ACL
+            a különböző jogosultságok kialakítása érdekében. 
+          </p>
+
+          <br>
+
+          <h5>Jelszavak és titkosítások a routereken, switcheken</h5>
+          <p>
+            Minden eszközön be lett állítva privilegizált, vonali és konzoli jelszó, emellett egy üzenet fogad bejelentkezéskor, 
+            hogy illetékteleneknek tilos a belépés.
+          </p>
+          <p>
+            Privilegizált jelszónál secret módba adtuk meg a jelszót, ami azt jelenti, hogy md5-tel van titkosítva, így, 
+            ha valaki megnézi a konfigurációt, szemmel nem értelmezhető jelszót fog találni. 
+            A másik 2 helyen csak sima, nem titkosítot jelszót tudunk megadni, 
+            de a service password-encryption parancs segítségével titkosítja ezeket a jelszavakat is.
+          </p>
+
+          <br>
+
+          <h5>SSH (Secure Shell)</h5>
+          <p>
+            Az összes routeren és switchen 2-es verziójú SSH-t állítottunk be, 2048 bit hosszú kulccsal, 
+            felhasználónévvel és jelszóval.
+            Ha SSH-t szeretnénk beállítani az eszközünkön, szüksége van az eszköznek hostname-re, 
+            domain-re, titkosítási kulcsra, egy felhasználónévre és jelszóra
+          </p>
+          <p>
+            (Az RSZ_ROUTER-en) [show ip ssh] paranccsal látható az SSH verzió, a hitelesítés időtúllépése, 
+            illetve, hogy hány próbálkozás lehetséges. Ha elérjük a maximum próbálkozások számát, 
+            akkor várnunk kell annyit, amennyi másodpercre be van állítva az időtúllépés. 
+          </p>
+        
+          <br>
+
+          <h5>ACL (Access Control List)</h5>
+          <p>
+            Az MNM minden részlegénél található kiterjesztett ACL, 
+            amelyekkel meghatároztuk azt, hogy az adminon kívül senki más ne tudjon ki pingelni a 
+            saját részlegének hálózatán kívül, viszont a szerverek és az ISP
+            szolgáltatásait továbbra is megkapják.
+          </p>
+          <p>
+            A kiterjesztett ACL-ek ugyanúgy IPv4-re és IPv6-ra egyaránt konfigurálva lettek.
+          </p>
+
+          <hr class="about_vonal">
+          <br>
+
+          <h4>Az MNM szerverei</h4>
+          <p>
+            Az MNM szerverek, szolgáltatásaik, operációs rendszerük a következők:
+          </p>
+          <div style="overflow-x:auto; margin: 10px;">
+            <table>
+              <tr>
+                <th>
+                  Szerver
+                </th>
+                <th>
+                  Szolgáltatások
+                </th>
+                <th>
+                  Operációs rendszer
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  PDC (Primary Domain Controller)
+                </th>
+                <th>
+                  AD (Active Directory), DHCP, DNS
+                </th>
+                <th>
+                  Windows Server 2019
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  BDC (Backup Domain Controller)
+                </th>
+                <th>
+                  PDC szolgáltatásai, DHCP Failover
+                </th>
+                <th>
+                  Windows Server 2019
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  WEB Server
+                </th>
+                <th>
+                  WEB, Fájlszerver, Backup szerver
+                </th>
+                <th>
+                  Linux (Debian) v12.0
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  EMAIL Server
+                </th>
+                <th>
+                  E-mail (IRedMail), FTP, OpenVPN
+                </th>
+                <th>
+                  Linux (Debian) v12.0
+                </th>
+              </tr>
+            </table>
+          </div>
+
+          <br>
+
+          <p>
+            A PDC szerver felel a dolgozók dinamikus IPv4 és IPv6-os címek kiosztásáért.
+            Továbbá az Active Directory segítségével felvehetőek az MNM munkaköreinek 
+            felhasználói, így az MNM-től megkapja az összes ott dolgozó a saját jogosultságát, 
+            ezzel mindneki képes lesz a saját munkakörét végezni. 
+          </p>
+
+          <br>
+
+          <p>
+            A BDC szerver ugyanazt a szolgáltatást nyújtja, mint a PDC, viszont csak akkor szükséges,
+            amikor a PDC valamilyen oknál fogva nem lenne képes elvégezni feladatait.
+            Ekkor lépne a PDC helyére a BDC, ameddig a probléma meg nem oldódik.
+          </p>
+
+          <br>
+
+          <p>
+            A WEB szerver az MNM weboldalért (mnm.hu) felelős, amely tanusítványok segítségével https-ként képes
+            üzemelni, tehát a weboldal megbízhatósága így már garantált.
+            A webszolgáltatás mellett az MNM fájlszervereként is működik, amely szolgáltatása képes a részlegek és munkakörök számára
+            közös felcsatolt tárhelyeket biztosítani, különböző kvótákkal.
+          </p>
+          <p>
+            Végül egy backup szolgáltatás lett biztosítva, amely RAID5 formájában lett megalkotva.
+            A RAID5 4 darab fizikai meghajóból áll, amelyet egy logikai meghajtóként kezel.
+            Ha az egyik meghajtó meghibásodna és nem lehetne belőle visszanyerni az adatokat,
+            akkor a másik 3 meghajtó segítségével még lehetséges az adatok visszaszerzése.
+            2 meghajtó meghibásodása után már sürgősen intézkedni kell.
+          </p>
+
+          <br>
+
+          <p>
+            Az EMAIL szerver felelős az MNM e-mail szolgáltatásáért, amelyben minden MNM-nél dolgozó rendelkezik egy
+            felhasználóval (MNM-től biztosított e-mail címmel).
+            Emellett biztosítva lett FTP szolgáltatás is, amely segítségével képesek fájlokat fel- és letölteni a felhasználók.
+          </p>
+          <p>
+            Így a legvégére tettem az OpenVPN szolgáltatást, mert ez az egyetlen szolgáltatás, amelyet
+            nem volt lehetséges a hálózati topológián megvalósítani, viszont virtualizáció segítségével sikerült élesben tesztelni.
+            Az OpenVPN segítségével képesek vagyunk egy sokkal biztonságosabb hálózatot kialakítani a kliens és jelen esetben a szolgáltató között, amely az EMAIL szerver.
+          </p>
+
+          <hr class="about_vonal">
+          <br>
+
+          <h3>Végszó</h3>
+          <h5>
+            Összegzés
+          </h5>
             <p>
-              A csapatom szerencsére annyira volt elhivatott a projekttel kapcsolatban, akárcsak én, 
+              Nagyon köszönöm, hogy ha szántál erre időt és végig olvastad ezt a kis ismertetőt!
+            </p>
+            <p>
+              Igen, ez nem a teljes projekt! Ha szeretnél a részletekről többet tudni, itt találod a hálózati topológiát, a dokumentációt, illetve a teszteléseket:
+              <a href="https://github.com/kiralysoka/Magyar_Nemzeti_Muzeum.git" class="szoveg-link" target="_blank">https://github.com/kiralysoka/Magyar_Nemzeti_Muzeum.git</a>
+            </p>
+            <p>
+              Továbbá itt az elérhetőségem, ha bármi kérdés merülne fel: <a href="https://www.linkedin.com/in/kiralysoka/" class="szoveg-link" target="_blank">https://www.linkedin.com/in/kiralysoka/</a>
+            </p>
+
+            <br>
+
+            <h5>
+              Pár személyes szó a csapatomról
+            </h5>
+            <p>
+              Az biztos, hogy elég sokat tanultam szakmailag, és így eleve a csapatban dolgozásról.
+              Egy kiváló csapatban dolgoztam, ahol mindannyiunknak fontos volt az, 
+              hogy precíz munkát adjunk ki a kezünkből.
+            </p>
+            <p>
+              Miközben együtt dolgoztunk a projekten, akkor tapasztaltam meg igazán azt,
+              hogy ha egységesen teszünk egy főbb cél érdekében, és ha ezt még ráadásul lelkesen is tesszük,
+              akkor képesek vagyunk a maximumot kihozni magunkból, sőt! A mi csapatunk, bőven túlvitte a maximum elvárásokat
+              amelyeket a projektnél elvártak tőlünk.
+            </p>
+
+            <br>
+
+            <h5>
+              A projekt sikeressége
+            </h5>
+            <p>
+              A csapatom annyira volt elhivatott a projekttel kapcsolatban, akárcsak én, 
               így mindhárman sikeresen elvégeztük a technikusi képzést, kiemelkedő eredményekkel.
             </p>
-          
-          <img src="" class="img-thumbnail-about" id="images_id" style="opacity: 0;">
         </div>
       </div>
     </div>
-    
-  <script>
-      const canvas = document.getElementById("background_rain");
-      const ctx = canvas.getContext("2d");
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+<script>
+/*Navigation into sticky mode*/
 
-      /*
-      let gradient = ctx. createLinearGradient(0, 0, canvas.width, canvas.height);
-      gradient.addColorStop(0.2, "red");
-      gradient.addColorStop(0.4, "blue");
-      gradient.addColorStop(0.6, "green");
-      */
+    const nav = document.querySelector('nav');
+    const navOffset = nav.offsetTop;
 
-    class Symbol {
-          constructor(x, y, fontSize, canvasHeight){
-              this.characters = "01";
-              this.x = x;
-              this.y = y;
-              this.fontSize = fontSize;
-              this.text = '';
-              this.canvasHeight = canvasHeight;
-        }
-      draw(context){
-          this.text = this.characters.charAt(Math.floor(Math.random()*this.characters.length));
-          context.fillText(this.text, this.x * this.fontSize, this.y * this.fontSize)
-          if(this.y * this.fontSize > this.canvasHeight && Math.random() > 0.989){
-              this.y = 0;
-          } else{
-              this.y += 1;
-          }
+
+    window.addEventListener('scroll', () => {
+      if(window.pageYOffset >= navOffset){
+        nav.classList.add('sticky');
+      }else{
+        nav.classList.remove('sticky');
       }
-    }
-
-    class Effect {
-        constructor(canvasWidth, canvasHeight){
-            this.canvasWidth = canvasWidth;
-            this.canvasHeight = canvasHeight;
-            this.fontSize = 25;
-            this.columns = this.canvasWidth/this.fontSize;
-            this.symbols = [];
-            this.#initialize();
-            /*console.log(this.symbols);*/
-        }
-        #initialize(){
-            for(let i = 0; i < this.columns; i++){
-                this.symbols[i] = new Symbol(i, 0, this.fontSize, this.canvasHeight);
-            }
-        }
-        resize(width, height){
-            this.canvasWidth = width;
-            this.canvasHeight = height;
-            this.columns = this.canvasWidth/this.fontSize;
-            this.symbols = [];
-            this.#initialize();
-        }
-    }
-
-    const effect = new Effect(canvas.width, canvas.height);
-    let lastTime = 0;
-    const fps = 30;
-    const nextFrame = 1000/fps;
-    let timer = 0;
-
-
-    function animate(timeStamp) {
-        const deltaTime = timeStamp - lastTime;
-        lastTime = timeStamp;
-        if(timer > nextFrame){
-            ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
-            ctx.textAlign = "center";
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-            ctx.fillStyle = "rgb(44, 156, 0)"; //gradient; 
-            ctx.font = effect.fontSize + "px monospace";
-            effect.symbols.forEach(symbol => symbol.draw(ctx));
-            timer = 0;
-        }else{
-            timer += deltaTime;
-        }
-    
-        requestAnimationFrame(animate);
-    }
-    animate(0);
-
-    window.addEventListener("resize", function(){
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-        effect.resize(canvas.width, canvas.height);
     });
-  </script>
+
+</script>
+    <script src="javascript.js"></script>
+    <!-- <script src="binary_rain.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
