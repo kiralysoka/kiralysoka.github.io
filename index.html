@@ -7,11 +7,11 @@
     <title>KiralysokA - Minden, ami hálózat</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <script src="javascript.js"></script>
 </head>
 <body class="default">
   <br>
   <canvas id="background_rain"></canvas>
+  <canvas id="starfield"></canvas>
     <div class="container-md col-lg-9 col-md-10 col-sm-10 col-xs-12" id="container_main">
       <nav class="navbar navbar-expand-md navbar-light" id="navbar_01">
         <a class="navbar-brand navi-bar-title" id="navbar_brand_title" href="https://www.kiralysoka.hu">KiralysokA</a>
@@ -35,19 +35,27 @@
           </ul>
         </div>
       </nav>
+
       <div align="right">
         <span id="time" onload="time()"></span>
       </div>
+
       <br>
-      <div class="dark_mode">
-        <label for="theme-selector">Oldal témája: </label>
-        <select id="theme-selector">
-          <option value="default"> Világos </option>
-          <option value="dark"> Sötét </option>
-          <option value="cyber"> Mátrix </option>
-        </select>
+
+      <div class="selector">
+        <div class="selector-inner">
+          <label for="theme-selector">Oldal témája: </label>
+            <select id="theme-selector">
+              <option value="default" class="selector">Világos</option>
+              <option value="dark" class="selector">Sötét</option>
+              <option value="matrix" class="selector">Mátrix</option>
+              <!--<option value="matrix-breached"> Mátrix (Breached)</option>-->
+            </select>
+        </div>
       </div>
+
       <br>
+      
       <div>
         <h1>Főoldal</h1>
         <hr id="vonal" class="vonal">
@@ -58,7 +66,7 @@
           <p>Annak érdekében készítettem el ezt a weboldalt, hogy írjak az eddigi tanulmányaimról és tapasztalataimról, illetve hogy tudjak segíteni azok számára, akik a hálózat területén szeretnének elhelyezkedni.</p>
           <p>Jelenleg, ami a weboldalon található, az néhány szó rólam és a tanulmányaimról. </p>
          
-          <img src="" class="img-thumbnail-about" id="images_id" style="opacity: 0;">
+          
 
           <p>A személyes jegyzeteim itt találhatók: </p>
           
@@ -71,97 +79,7 @@
         </div>
       </div>
     </div>
-
-
-  <script>
-      const canvas = document.getElementById("background_rain");
-      const ctx = canvas.getContext("2d");
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-
-      /*
-      let gradient = ctx. createLinearGradient(0, 0, canvas.width, canvas.height);
-      gradient.addColorStop(0.2, "red");
-      gradient.addColorStop(0.4, "blue");
-      gradient.addColorStop(0.6, "green");
-      */
-
-    class Symbol {
-          constructor(x, y, fontSize, canvasHeight){
-              this.characters = "01";
-              this.x = x;
-              this.y = y;
-              this.fontSize = fontSize;
-              this.text = '';
-              this.canvasHeight = canvasHeight;
-        }
-      draw(context){
-          this.text = this.characters.charAt(Math.floor(Math.random()*this.characters.length));
-          context.fillText(this.text, this.x * this.fontSize, this.y * this.fontSize)
-          if(this.y * this.fontSize > this.canvasHeight && Math.random() > 0.989){
-              this.y = 0;
-          } else{
-              this.y += 1;
-          }
-      }
-    }
-
-    class Effect {
-        constructor(canvasWidth, canvasHeight){
-            this.canvasWidth = canvasWidth;
-            this.canvasHeight = canvasHeight;
-            this.fontSize = 25;
-            this.columns = this.canvasWidth/this.fontSize;
-            this.symbols = [];
-            this.#initialize();
-            /*console.log(this.symbols);*/
-        }
-        #initialize(){
-            for(let i = 0; i < this.columns; i++){
-                this.symbols[i] = new Symbol(i, 0, this.fontSize, this.canvasHeight);
-            }
-        }
-        resize(width, height){
-            this.canvasWidth = width;
-            this.canvasHeight = height;
-            this.columns = this.canvasWidth/this.fontSize;
-            this.symbols = [];
-            this.#initialize();
-        }
-    }
-
-    const effect = new Effect(canvas.width, canvas.height);
-    let lastTime = 0;
-    const fps = 30;
-    const nextFrame = 1000/fps;
-    let timer = 0;
-
-
-    function animate(timeStamp) {
-        const deltaTime = timeStamp - lastTime;
-        lastTime = timeStamp;
-        if(timer > nextFrame){
-            ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
-            ctx.textAlign = "center";
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-            ctx.fillStyle = "rgb(44, 156, 0)"; //gradient; 
-            ctx.font = effect.fontSize + "px monospace";
-            effect.symbols.forEach(symbol => symbol.draw(ctx));
-            timer = 0;
-        }else{
-            timer += deltaTime;
-        }
-    
-        requestAnimationFrame(animate);
-    }
-    animate(0);
-
-    window.addEventListener("resize", function(){
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-        effect.resize(canvas.width, canvas.height);
-    });
-  </script>
+    <script src="javascript.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
