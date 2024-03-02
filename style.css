@@ -360,8 +360,8 @@ body {
 
 /* Topológia (Slider) ------------------------------------------*/
     --slider-topology-content-background-color: rgb(0, 0, 0);
-    --slider-topology-content-color: rgb(255, 255, 255);
-    --slider-topology-content-border: 3px solid rgb(255, 255, 255);
+    --slider-topology-content-color: rgb(209, 209, 209);
+    --slider-topology-content-border: 3px solid rgb(161, 161, 161);
     --slider-topology-content-text-shadow: ;
     --slider-topology-content-box-shadow: 0 0 10px rgb(0, 0, 0),
                                           0 0 20px rgb(0, 0, 0);                                    
@@ -621,8 +621,8 @@ body {
 
 /* Topológia (Slider) ------------------------------------------*/
     --slider-topology-content-background-color: rgb(0, 0, 0);
-    --slider-topology-content-color: rgb(255, 255, 255);
-    --slider-topology-content-border: 3px solid rgb(255, 255, 255);
+    --slider-topology-content-color: rgb(172, 255, 139);
+    --slider-topology-content-border: 3px solid rgb(172, 255, 139);
     --slider-topology-content-text-shadow: 0 0 10px rgb(72, 255, 0), 
                                            0 0 20px rgb(72, 255, 0),
                                            0 0 40px rgb(72, 255, 0), 
@@ -633,7 +633,7 @@ body {
                                           0 0 20px rgb(72, 255, 0);                                    
 
     --slider-topology-content-background-color-hover: rgb(0, 0, 0);
-    --slider-topology-content-color-hover: rgb(255, 255, 255);
+    --slider-topology-content-color-hover: rgb(213, 255, 196);
     --slider-topology-content-border-hover: 3px solid rgb(255, 255, 255);
     --slider-topology-content-text-shadow-hover: 0 0 10px rgb(255, 0, 0),
                                                  0 0 20px rgb(255, 0, 0),
@@ -655,7 +655,7 @@ body {
                                        0 0 160px rgb(72, 255, 0);
 
     
-    --slider-topology-bar-hover: rgb(255, 85, 85);
+    --slider-topology-bar-hover: rgb(0, 0, 0);
     --slider-topology-bar-box-shadow-hover: 0 0 10px rgb(255, 0, 0), 
                                             0 0 20px rgb(255, 0, 0);
     --slider-topology-bar-border-hover: 2px solid rgb(255, 255, 255);
@@ -1379,7 +1379,7 @@ input[name="r"]{
     position: absolute;
     padding: 5px;
     background-color: var(--slider-topology-content-background-color);
-    box-shadow: var(--slider-topology-content-box-shadow);
+    
     border: var(--slider-topology-content-border);
     color: var(--slider-topology-content-color);
     transition: 0.2s;
