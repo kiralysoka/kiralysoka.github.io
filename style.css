@@ -1390,18 +1390,22 @@ input[name="r"]{
 @media screen and (max-width: 400px) {
     div.bottom-left {
       font-size: 10px;
+      padding: 1px;
     }
     div.top-left {
         font-size: 10px;
+        padding: 1px;
       }
 }
 
 @media screen and (min-width: 401px) {
     div.bottom-left {
       font-size: 15px;
+      padding: 1px;
     }
     div.top-left {
         font-size: 15px;
+        padding: 1px;
       }
 }
 
