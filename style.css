@@ -1191,7 +1191,7 @@ h5{
 }
 
 .szoveg-link{
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--szoveg-link-color);
     text-shadow: var(--szoveg-link-text-shadow);
     transition: 0.5s;
@@ -1379,25 +1379,24 @@ input[name="r"]{
     position: absolute;
     padding: 5px;
     background-color: var(--slider-topology-content-background-color);
-    color: var(--slider-topology-content-color);
-    border: var(--slider-topology-content-border);
-    text-shadow: var(--slider-topology-content-text-shadow);
     box-shadow: var(--slider-topology-content-box-shadow);
+    border: var(--slider-topology-content-border);
+    color: var(--slider-topology-content-color);
     transition: 0.2s;
 
 }
-.bottom-left:hover, .top-left:hover{
-    background-color: var(--slider-topology-content-background-color-hover);
-    box-shadow: var(--slider-topology-content-box-shadow-hover);
-    border: var(--slider-topology-content-border-hover);
-    color: var(--slider-topology-content-color-hover);
-    text-shadow: var(--slider-topology-content-text-shadow-hover);
+
+
+@media screen and (max-width: 400px) {
+    div.bottom-left {
+      font-size: 10px;
+    }
+    div.top-left {
+        font-size: 10px;
+      }
 }
 
-
-
-  
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 401px) {
     div.bottom-left {
       font-size: 15px;
     }
