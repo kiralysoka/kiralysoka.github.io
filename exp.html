@@ -3,17 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/ohh.png"/>
+    <link rel="shortcut icon"  href="images/icon.ico"/>
     <title> Tapasztalataim - KiralysokA </title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <style>
-
-
-      
-
-    </style>
 </head>
 <body class="default">
   <br>
@@ -35,7 +29,7 @@
               <p> </p>
             </li>
             <li class="nav-item">
-                <a href="https://kiralysoka.hu/" class="btn btn-light button-secondary" id="nav_button_third">Főoldal<span class="sr-only"></span></a>
+                <a href="https://kiralysoka.hu" class="btn btn-light button-secondary" id="nav_button_third">Főoldal<span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
                 <a href="https://kiralysoka.hu/about" class="btn btn-light button-secondary" id="nav_button_secondary">Rólam<span class="sr-only"></span></a>
@@ -101,6 +95,9 @@
             </p>
             <p>
                A projekt neve: Magyar Nemzeti Múzeum.
+               <p>
+               A teljes projekt <a href="https://github.com/kiralysoka/Magyar_Nemzeti_Muzeum.git" target="_blank" class="szoveg-link">itt</a> található.
+              </p>
             </p>
           
             <hr class="about_vonal">
@@ -119,7 +116,7 @@
 
           <div id="topology">
            <a href="images/topology.png" target="_blank">
-            <img src="images/topology.png" title="A múzeum topológiája" alt="A múzeum topológiája" class="topology-light">
+            <img src="images/topology.png" title="A múzeum topológiája" alt="A múzeum topológiája" class="topology-light" style="margin-top: 5px;">
            </a>
           </div>
 
@@ -161,7 +158,7 @@
           </p>
           <div id="topology">
             <a href="images/backbone.png" target="_blank">
-             <img src="images/backbone.png" title="A múzeum gerinchálózata" alt="A múzeum topológiája" class="topology-light">
+             <img src="images/backbone.png" title="A múzeum gerinchálózata" alt="A múzeum gerinchálózata" class="topology-light" style="margin-top: 5px;">
             </a>
            </div>
 
@@ -177,7 +174,7 @@
           </p>
           <div id="topology">
             <a href="images/EIGRP_1.png" target="_blank">
-             <img src="images/EIGRP_1.png" title="EIGRP ellenőrzés" alt="A múzeum topológiája" class="topology-light">
+             <img src="images/EIGRP_1.png" title="EIGRP ellenőrzés" alt="EIGRP ellenőrzés" class="topology-light" style="margin-top: 5px;">
             </a>
            </div>
           <p>
@@ -190,7 +187,7 @@
             Az R1 Serial0/0/1-es interface-én kiadott MD5-ös hitelesítés konfigurációja:
             <div id="topology">
               <a href="images/EIGRP_MD5.png" target="_blank">
-               <img src="images/EIGRP_MD5.png" title="EIGRP MD5-ös hitelesítés parancs" alt="" class="topology-dark">
+               <img src="images/EIGRP_MD5.png" title="EIGRP MD5-ös hitelesítés parancs" alt="EIGRP MD5-ös hitelesítés parancs" class="topology-dark" style="margin-top: 5px;">
               </a>
              </div>
           </p>
@@ -220,21 +217,21 @@
                     <input type="radio" name="r" id="r5">
                     <div class="slide s1 image" style="position:relative;">
                       <a href="images/PPP_R3-ISP.png" target="_blank">
-                        <img src="images/PPP_R3-ISP.png" title="PPP ellenőrzése R3-on" style="height: 100%; width: 100%; position:relative;">
+                        <img src="images/PPP_R3-ISP.png" title="PPP ellenőrzése R3-on" alt="PPP ellenőrzése R3-on" style="height: 100%; width: 100%; position:relative;">
                         <div class="bottom-left">PPP ellenőrzése</div>
                         <div class="top-left">1 / 2</div>
                       </a>
                     </div>
                     <div class="slide image" style="position:relative;">
                       <a href="images/CHAP_R3-ISP.png" target="_blank">
-                        <img src="images/CHAP_R3-ISP.png" title="PPP ellenőrzése az ISP-n" alt="" style="height: 100%; width: 100%; position:relative;">
+                        <img src="images/CHAP_R3-ISP.png" title="CHAP konfiguráció" alt="CHAP konfiguráció" style="height: 100%; width: 100%; position:relative;">
                         <div class="bottom-left">CHAP konfiguráció</div>
                         <div class="top-left">2 / 2</div>
                       </a>
                     </div>
                     <div class="slide image" style="position:relative;">
                       <a href="" target="_blank">
-                        <img src="" title="A CHAP configurációja R3-on" alt="" style="height: 100%; width: 100%; position:relative;">
+                        <img src="" title="" alt="" style="height: 100%; width: 100%; position:relative;">
                         <div class="bottom-left"></div>
                         <div class="top-left">3 / 3</div>
                       </a>
@@ -265,7 +262,9 @@
             A gerinchálózat és a távmunkás közöt IPsec VPN lett kialakítva, annak érdekében, hogy a távmunkás
             biztonságosan képes legyen intézni a munkáját az MNM számára otthonról.
             <div id="topology">
-              <img src="images/IPsec_R3-HOME.png" title="" alt="" class="topology-light">
+              <a href="images/IPsec_R3-HOME.png" target="_blank">
+              <img src="images/IPsec_R3-HOME.png" title="IPsec beüzemeltetésének helye" alt="IPsec beüzemeltetésének helye" class="topology-light" style="margin-top: 5px;">
+              </a>
             </div>
           </p>
           <p>
@@ -287,8 +286,18 @@
             még akkor is, ha a hálózat főútvonala valamilyen oknál fogva meghibásodik.
           </p>
           <p>
-            Itt, az MNM számára minden részlegnél STP-t, illetve a nagyobb részlegeknél HSRP-t alkalmaztunk,
+            Itt, az MNM számára minden részlegnél a switchek számára 2. rétegbeli redundáns megoldást (STP-t), illetve a nagyobb részlegeknél a routerek számára 
+            3. rétegbeli redundáns megoldást (HSRP-t) alkalmaztunk,
             amelyek a redundás hálózatok kialakítását segítik elő.
+          </p>
+          <br>
+          <p>
+            Itt, a Központi Adattárban STP és HSRP is megtalálható:
+          <div id="topology">
+            <a href="images/STP_01.png" target="_blank">
+              <img src="images/STP_01.png" title="STP és HSRP" alt="STP és HSRP helye" class="topology-light" style="aspect-ratio: 16/9; margin-top: 5px;">
+            </a>
+          </div>
           </p>
           <br>
 
@@ -301,12 +310,70 @@
             a redundás tartalék kapcsolat mielőbbi felélesztése.
           </p>
           <p>
-            Az STP 2. rétegbeli redundáns megoldás, tehát a munkakörökön belül, a switchek számára lett kialakítva.
+            Az STP-t úgy alakítottuk ki, hogy az MNM-ben lévő összes "_1"-es switch legyen a gyökérponti híd (root bridge), amelynek feladata, hogy a legrövidebb utat biztosítsa
+            mindenki számára.
+          
+          <br>
+            <p>
+            A "K_SW_3" switchen láthatjuk, hogy a port channel1 (Po1) gyökérponti porttal rendelkezik, amely azt jelenti, hogy a root bridge felé vezető legrövidebb útvonal a többi port channel-hez képest. 
             <br>
-            Itt, például a Központi Adattárban a switchek közt megtalálható:
-            <div id="topology">
-              <img src="images/STP_01.png" title="" alt="" class="topology-light" style="aspect-ratio: 16/9;">
+            Innen is láthatjuk, hogy "K_SW_1" a root bridge: (1/2)
+            <br>
+            <br>
+            A root bridge beállítása a prioritások módosításával történt, alapértelmezetten a switchek prioritásértéke 32768, minnél kisebb az érték = annál nagyobb a prioritás.
+            <br>
+            Itt láthatjuk, hogy "K_SW_1" értéke sokkal kisebb "K_SW_4" értékénél, ezzel is biztosítva azt, how "K_SW_1" legyen a root bridge: (2/2)
+            <br>
+            
+            <div class="teszt-ez-itt" style="height: 100%; z-index: 9; display: block;">
+              <div style="width: 100%; height: 100%; margin-right: 10px;  padding: 20px;">
+                <div class="slidershow middle">
+                  <div class="slides" >
+                    <input type="radio" name="r" id="q1" checked>
+                    <input type="radio" name="r" id="q2">
+                    <input type="radio" name="r" id="q3">
+                    <input type="radio" name="r" id="q4">
+                    <input type="radio" name="r" id="q5">
+                    <div class="slide s1 image" style="position:relative;">
+                      <a href="images/STP_RootB.png" target="_blank">
+                        <img src="images/STP_RootB.png" title="Root bridge ellenőrzése" alt="Root bridge ellenőrzése" style="height: 100%; width: 100%; position:relative;">
+                        <div class="bottom-left">Root bridge ellenőrzése</div>
+                        <div class="top-left">1 / 2</div>
+                      </a>
+                    </div>
+                    <div class="slide image" style="position:relative;">
+                      <a href="images/STP_02.png" target="_blank">
+                        <img src="images/STP_02.png" title="Prioritásértékek megállapítása" alt="Prioritásértékek megállapítása" style="height: 100%; width: 100%; position:relative;">
+                        <div class="bottom-left">Prioritás értékek megállapítása</div>
+                        <div class="top-left">2 / 2</div>
+                      </a>
+                    </div>
+                    <div class="slide image" style="position:relative;">
+                      <a href="" target="_blank">
+                        <img src="" title="" alt="" style="height: 100%; width: 100%; position:relative;">
+                        <div class="bottom-left"></div>
+                        <div class="top-left">3 / 3</div>
+                      </a>
+                    </div>
+                    <div class="slide image">
+                      <img src="images/afternoon.jpg" alt="">
+                    </div>
+                    <div class="slide image">
+                      <img src="images/afternoon.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                
+                
+                <div class="navigator" style="text-align: center">
+                  <label for="q1" class="bar"><p class="bar-number">1</p></label> 
+                  <label for="q2" class="bar"><p class="bar-number">2</p></label>
+                  <!--<label for="r3" class="bar"><p class="bar-number">3</p></label>-->
+                </div>
+              </div>
             </div>
+          </p>
+            
           </p>
           <br>
 
@@ -322,6 +389,14 @@
             ameddig az eredeti aktív router hibaelhárítása le nem zajlik.
             Addig is a standby router az aktív router feladatait végzi. 
           </p>
+          <p>
+            Mint ahogyan itt is látható, "K_ROUTER_01" státusza az összes alhálózat számára aktív, míg "K_ROUTER_02" státusza standby:
+            <div id="topology">
+              <a href="images/HSRP_01.png" target="_blank">
+                <img src="images/HSRP_01.png" title="HSRP státuszok a routereknél" alt="HSRP státuszok a routereknél" class="topology-light" style="aspect-ratio: 16/7; margin-top: 5px;">
+              </a>
+            </div>
+          </p>
           <hr class="about_vonal">
           <br>
           
@@ -329,8 +404,17 @@
           <p>
             Az MNM minden részlegének hálózata négy alhálózatra van szedve a különböző munkakörök számára.
           </p>
+          <br>
           <p>
-            A munkakörök eszerint különböző vlanokat kaptak.
+            Az MNM majdnem minden részlegén a következő munkakörök találhatók:
+          <div id="topology">
+            <a href="images/Munkakörök_01.png" target="_blank">
+              <img src="images/Munkakörök_01.png" title="Munkakörök a részlegen belül" alt="Munkakörök a részlegen belül" class="topology-light" style="aspect-ratio: 16/9; margin-bottom: 10px; margin-top: 5px;">
+            </a>
+          </div>
+          </p>
+          <p>
+            A munkakörök eszerint különböző VLAN-okat kaptak.
           </p>
           <br>
           <h5>VLAN (Virtual Local Area Network)</h5>
@@ -341,25 +425,34 @@
             felhasználókat elszegmentálva. 
           </p>
           <p>
-            Az MNM számára minden részlegen a munkakörök és (vlan kiosztások) a következők: 
+            Az MNM számára minden részlegen a munkakörök és (VLAN kiosztások) a következők: 
           </p>
           <p>
             - Dolgozó (10-es vlan)
             <br>
-            - Titkár (20-es vlan)
+            - Titkár (20-es VLAN)
             <br>
-            - Admin (30-es vlan)
+            - Admin (30-es VLAN)
             <br>
-            - Főnök (40-es vlan)
+            - Főnök (40-es VLAN)
+          <p>
+            <br>
+            Itt is látható a VLAN kiosztás:
+            <div id="topology">
+              <a href="images/VLAN_01.png" target="_blank">
+                <img src="images/VLAN_01.png" title="VLAN kialakítás" alt="VLAN kialakítás" class="topology-light" style="aspect-ratio: 16/9; margin-bottom: 10px; margin-top: 5px;">
+              </a>
+            </div>
+          </p>
           </p>
 
           <br>
 
           <h5>Native VLAN</h5>
           <p>
-            A munkakörök vlan-jain kívül kiosztottuk minden részlegen egy 99-es Vlant, amely Native Vlan-ként szolgál, 
-            ezzel is nagyobb védelmet biztosítva a hálózatnak, mivel az alapértelmezett 1-es Vlan-t 
-            meghagyva Native Vlan-ként hálózatbiztonsági kockázat lenne.
+            A munkakörök VLAN-jain kívül kiosztottuk minden részlegen egy 99-es VLAN-t, amely Native VLAN-ként szolgál, 
+            ezzel is nagyobb védelmet biztosítva a hálózatnak, mivel az alapértelmezett 1-es VLAN-t 
+            meghagyva Native VLAN-ként hálózatbiztonsági kockázat lenne.
           </p>
           <p>
             A native VLAN a címkézetlen forgalmak miatt lett kialakítva, annak érdekében, hogy elkerüljük a VLAN ugrás (hopping),
@@ -371,13 +464,64 @@
           <h5>IPv4 és IPv6 címkiosztások</h5>
           <p>
             Az MNM minden részlege között dinamikusan és statikusan lettek IPv4-es címek kiosztva, 
-            a dolgozók közt dinamikusan, minden más munkakörnél statikusan.
+            a dolgozók közt dinamikusan, minden más munkakörnél statikusan. (1/4)
           </p>
           <p>
-            Az IPv6 csak bizonyos részlegeken található. Statikusan kiosztott IPv6 a Rendezvényszervezési Főosztályon 
-            és a gerinchálózatban, míg dinamikusan a Pénzügyi és Gazdasági Iroda dolgozói számára DHCPv6 segítségével.
+            Az IPv6 csak bizonyos részlegeken található. Statikusan kiosztott IPv6 a Rendezvényszervezési Főosztályon (2/4)
+            és a gerinchálózatban (3/4), míg dinamikusan a Pénzügyi és Gazdasági Iroda dolgozói számára DHCPv6 segítségével. (4/4)
           </p>
-          
+          <div class="teszt-ez-itt" style="height: 100%; z-index: 9; display: block;">
+            <div style="width: 100%; height: 100%; margin-right: 10px;  padding: 20px;">
+              <div class="slidershow middle">
+                <div class="slides" >
+                  <input type="radio" name="r" id="p1" checked>
+                  <input type="radio" name="r" id="p2">
+                  <input type="radio" name="r" id="p3">
+                  <input type="radio" name="r" id="p4">
+                  <input type="radio" name="r" id="p5">
+                  <div class="slide s1 image" style="position:relative;">
+                    <a href="images/Dina&Stat.png" target="_blank">
+                      <img src="images/Dina&Stat.png" title="Dinamikus és statikus IPv4 címkiosztás" alt="Dinamikus és statikus IPv4 címkiosztás" style="height: 100%; width: 100%; position:relative;">
+                      <!--<div class="bottom-left"></div>-->
+                      <div class="top-left">1 / 4</div>
+                    </a>
+                  </div>
+                  <div class="slide image" style="position:relative;">
+                    <a href="images/Dina_IPv4-Stat_IPv6.png" target="_blank">
+                      <img src="images/Dina_IPv4-Stat_IPv6.png" title="Statikus IPv6 címkiosztás" alt="Statikus IPv6 címkiosztás" style="height: 100%; width: 100%; position:relative;">
+                      <!--<div class="bottom-left"></div>-->
+                      <div class="top-left">2 / 4</div>
+                    </a>
+                  </div>
+                  <div class="slide image" style="position:relative;">
+                    <a href="images/Stat_IPv6.png" target="_blank">
+                      <img src="images/Stat_IPv6.png" title="Statikus IPv6 a gerinchálózatban" alt="Statikus IPv6 a gerinchálózatban" style="height: 100%; width: 100%; position:relative;">
+                      <!--<div class="bottom-left"></div>-->
+                      <div class="top-left">3 / 4</div>
+                    </a>
+                  </div>
+                  <div class="slide image" style="position:relative;">
+                    <a href="images/Dina_IPv4-Dina_IPv6.png" target="_blank">
+                      <img src="images/Dina_IPv4-Dina_IPv6.png" title="Dinamikus IPv4 és IPv6" alt="Dinamikus IPv4 és IPv6" style="height: 100%; width: 100%; position:relative;">
+                      <!--<div class="bottom-left"></div>-->
+                      <div class="top-left">4 / 4</div>
+                    </a>
+                  </div>
+                  <div class="slide image">
+                    <img src="images/afternoon.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              
+              
+              <div class="navigator" style="text-align: center">
+                <label for="p1" class="bar"><p class="bar-number">1</p></label> 
+                <label for="p2" class="bar"><p class="bar-number">2</p></label>
+                <label for="p3" class="bar"><p class="bar-number">3</p></label>
+                <label for="p4" class="bar"><p class="bar-number">4</p></label>
+              </div>
+            </div>
+          </div>
           <!--------------------------------------------------------------------------------------------------------->
         
           <p>
@@ -405,8 +549,13 @@
           <p>
             Privilegizált jelszónál secret módba adtuk meg a jelszót, ami azt jelenti, hogy md5-tel van titkosítva, így, 
             ha valaki megnézi a konfigurációt, szemmel nem értelmezhető jelszót fog találni. 
-            A másik 2 helyen csak sima, nem titkosítot jelszót tudunk megadni, 
-            de a service password-encryption parancs segítségével titkosítja ezeket a jelszavakat is.
+            A másik 2 helyen csak sima, titkosítatlan jelszót tudunk megadni, 
+            de a "service password-encryption" parancs segítségével titkosítja ezeket a jelszavakat is.
+          <div id="topology">
+            <a href="images/pass_encryption_service.png" target="_blank">
+              <img src="images/pass_encryption_service.png" title="service password-encryption parancs" alt="service password-encryption parancs" class="topology-light" style="aspect-ratio: 16/7; margin-bottom: 10px; margin-top: 5px;">
+            </a>
+          </div>
           </p>
 
           <br>
@@ -419,9 +568,17 @@
             domain-re, titkosítási kulcsra, egy felhasználónévre és jelszóra
           </p>
           <p>
-            (Az RSZ_ROUTER-en) [show ip ssh] paranccsal látható az SSH verzió, a hitelesítés időtúllépése, 
+            A "show ip ssh" paranccsal látható az SSH verzió, a hitelesítés időtúllépése, 
             illetve, hogy hány próbálkozás lehetséges. Ha elérjük a maximum próbálkozások számát, 
             akkor várnunk kell annyit, amennyi másodpercre be van állítva az időtúllépés. 
+          <div id="topology">
+            <a href="images/show ip ssh.png" target="_blank">
+              <img src="images/show ip ssh.png" title="show ip ssh parancs" alt="show ip ssh parancs" class="topology-light" style="aspect-ratio: 16/2; margin-bottom: 10px; margin-top: 5px;">
+            </a>
+          </div>
+            <p>
+              Mivel az SSH hozzáférést csak az adminok számára szeretnénk, ezért ACL segítségével megszabtuk azt, hogy minden más munkakör ne tudja a részlegük (vagy bármely részleg) routerét és switchét elérni.
+            </p>
           </p>
         
           <br>
@@ -435,6 +592,14 @@
           </p>
           <p>
             A kiterjesztett ACL-ek ugyanúgy IPv4-re és IPv6-ra egyaránt konfigurálva lettek.
+          <p>
+            Itt egy példa a Pénzügyi és Gazdasági router dolgozói számára kialakított IPv4-es és IPv6-os ACL: 
+          </p>
+            <div id="topology">
+              <a href="images/G_ROUTER_ACL-v4-v6.png" target="_blank">
+              <img src="images/G_ROUTER_ACL-v4-v6.png" title="IPv4 és IPv6-os ACL" alt="IPv4 és IPv6-os ACL" class="topology-light" style="aspect-ratio: 16/9; margin-top: 5px;">
+              </a>
+            </div>
           </p>
 
           <hr class="about_vonal">
@@ -442,7 +607,18 @@
 
           <h4>Az MNM szerverei</h4>
           <p>
-            Az MNM szerverek, szolgáltatásaik, operációs rendszerük a következők:
+            <div id="topology">
+              <a href="images/szerverszoba.png" target="_blank">
+                <img src="images/szerverszoba.png" title="Az MNM szerverszoba" alt="Az MNM szerverszoba" class="topology-light" style="aspect-ratio: 16/8; margin-bottom: 10px; margin-top: 5px;">
+              </a>
+            </div>
+            <p>
+              Itt most inkább az élesben elkészült, VMware-ben virtualizált szerverekről lesz szó.
+            </p>
+          </p>
+          <br>
+          <p>
+            A szerverek, szolgáltatásaik, operációs rendszerük a következők:
           </p>
           <div style="overflow-x:auto; margin: 10px;">
             <table>
@@ -564,7 +740,7 @@
               Igen, ez nem a teljes projekt! Ha szeretnél a részletekről többet tudni, <a href="https://github.com/kiralysoka/Magyar_Nemzeti_Muzeum.git" class="szoveg-link" target="_blank">itt</a> találod a hálózati topológiát, a dokumentációt, illetve a teszteléseket.
             </p>
             <p>
-              Továbbá <a href="https://www.linkedin.com/in/kiralysoka/" class="szoveg-link" target="_blank">itt</a> az elérhetőségem, ha bármi kérdés merülne fel. 
+              Továbbá <a href="https://www.linkedin.com/in/kiralysoka/" class="szoveg-link" target="_blank">itt</a> az elérhetőségem, ha bármi kérdés merülne fel.
             </p>
 
             <br>
@@ -596,6 +772,7 @@
         </div>
       </div>
     </div>
+    
 <script>
 /*Navigation into sticky mode*/
 
@@ -613,7 +790,6 @@
 
 </script>
     <script src="javascript.js"></script>
-    <!-- <script src="binary_rain.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
