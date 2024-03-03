@@ -35,13 +35,6 @@ const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-/*
-let gradient = ctx. createLinearGradient(0, 0, canvas.width, canvas.height);
-gradient.addColorStop(0.2, "red");
-gradient.addColorStop(0.4, "blue");
-gradient.addColorStop(0.6, "green");
-*/
-
 class Symbol {
     constructor(x, y, fontSize, canvasHeight){
         this.characters = "01";
@@ -247,18 +240,3 @@ var starsCount = 400,
   init();
   
 })();
-
-
-
-
-/*
-(function gui() {
-    let gui = new dat.GUI();
-
-    let f1 = gui.addFolder('Stars');
-    starCountGUI = f1.add(this, 'starsCount', 1, starsCount * 2).name('Count'); 
-    starCountGUI.onChange(() => { stars = []; });
-    f1.add(this, 'starsSpeed', starsMinSpeed, starsMaxSpeed).name('Speed');
-    f1.open();
-})();
-*/
